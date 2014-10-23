@@ -85,9 +85,18 @@
 			<div class="col-lg-12">
 				<br></br>
 				<h2>OVERALL DESIGN</h2>
+				<img style="width:100%" src="assets/img/images/prototype3.png">
+				<br></br>
+				<p>Above is the latest design of our interface. This design is the result of three iterations of paper prototypes, which are extensively documented in the Appendix below. In this version, there are three main features listed in order of priority: 1) Preemptive Menu Choosing 2) Reflective Feedback and 3) Menu Viewing.</p>
+				<p>The <b>preemtive dish choosing feature</b> allows the user to help decide what dishes are going to be available in the future. It helps include students in the menu creation process. Specifically, this feature ties to the Concerned Christy’s need for healthy eating options. Instead of giving feedback after the fact, this feature allows Christy to ensure that healthy options will already be in the dining hall.</p>
+				<p>The <b>reflective feedback</b> feature allows the user to give feedback on dishes he or she already ate. Currently, this type of feedback is only given through word of mouth directly to dining hall staff, or not all. This feature helps students like Restricted Rachel share her opinions of the dining hall to people who can actually make change, and students like Concerned Christy, who are quiet and don’t necessarily talk to dining hall staff regularly. </p>
+				<p>Finally, the <b>menu viewing feature</b>, which is a lower priority feature of the app, allows the user to quickly view dishes and nutrition info on the dishes. This connects to Concerned Christy’s need to know she is eating healthy, and Restricted Rachel’s value of knowledge, and knowing what meals are available, before getting into the dining hall. </p>
+				<h3>Why an App?</h3>
+				<p>We decided to implement our idea as a smart device application. We wanted our design to be easily accessible and quick to use. Using a specialized app enables low activation energy of use for smartphone users. It allows users to choose their meals and give feedback on the go or in the dining hall, perhaps before beginning or finishing a meal, when they are most likely to have their opinions on their minds. A device within the dining hall itself could either become crowded or be easily ignored; busy users would also have to take the extra time to stand in one location or make their friends wait for them while they fill out the necessary information. A computer interface would make the user either wait until they had returned to their dorms or pull out their computer in the dining hall itself, the prior of which would be significant time after the meals, allowing the user to forget they were going to give feedback, and the prior is simply inconvenient. Because most customers at college/university dining halls have and carry smart phones, our app would be easily and quickly accessible and carry them with them all the time, so this would allow them to quickly access it.</p>
 			</div>	
-
 		</div>	
+
+
 	
 		<hr>
 
@@ -95,6 +104,9 @@
 			<div class="col-lg-12">
 				<br></br>
 				<h2>FLOW DIAGRAM</h2>
+				<p>The flow diagram for our prototype 1.2 is shown below. The same flow is maintained in the final paper prototype. Because the purpose of the app is primary feedback based, the flow of the app is also centered around the main feedback pages. The menu feature is tucked away, still easily accesible, but less integrated with the overall flow of the app. </p>
+				<img style="width:100%" src="assets/img/images/flowDiagram.jpg">
+
 			</div>	
 		</div>	
 
@@ -103,12 +115,44 @@
 
 		<div class="row">
 			<div class="col-lg-12">
-				<br></br>
 				<h2>MAJOR SCREENS</h2>
-			</div>	
+			</div>		
+			<br><br>
+			<div class="col-lg-6 centered">
+				<img src="assets/img/images/homePage1.png" alt="" style="max-width:90%;max-height:425px">
+				<br></br>
+				<p><b>Initial Frame.</b>  A picture of the screen right when it opens</p>
+				<img src="assets/img/images/homePage2.png" alt="" style="max-width:90%;max-height:425px">
+				<br></br>
+				<p><b>Second Frame.</b>  A picture of the screen after you select a dish.</p>
+				<img src="assets/img/images/homePage3.png" alt="" style="max-width:90%;max-height:425px">
+				<br></br>
+				<p><b>Final Frame.</b>  A picture of the screen with results.</p>
+			</div><!-- col-lg-6 -->	
+			<div class="col-lg-6">
+				<h3>Homepage/Menu Choosing</h3>
+				<p>The screen plays the focus role in our application. Customers in dining halls need easy ways to get feedback to dining halls and see it affect their experience at the dining halls. We wanted our app to allow users to give feedback on past items as well as directly impact the future with choosing of dishes appearing in the dining hall. If customers see that what they are doing makes a difference in the service that dining halls provide to them, they would have a strong enough benefit to continually use the application.</p>
+				<p>This screen acts as the starting point to quickly interact with the features of voting for dishes in the future, giving feedback, and viewing the menu. The latter two are completed on other screens while voting for dishes can be accomplished in the same screen. The first two are the main features of our application. Since we would be including the menu anyway for the feedback component of our app which allows users to give actionable feedback on specific dishes, we allowed the option to view the menu for meals in the future before dishes can be voted on. After users vote, we saw that we needed something to indicate that their vote was confirmed and the current results. Showing this after the user votes helps reduce any bias of going with the majority.</p>
+				<p>This screen contains information about the days of the week and where the user can quickly give his/her input to a dining hall. On the top, it has the dining hall selected, centered. The sidebar button is at the top left and the ability to access the full menu toward the right as well as which week it is. The week dates were chosen given how the dining hall posts their menu currently, but this will be changed to identify the current day along with the date in the list for a cleaner interface. The see full menu with the text is a placeholder for an icon. For the meals of the week that have gone past already, the give feedback button appears, which opens up a menu with feedback buttons for dishes. We made the assumption for now that dining halls require 2 days advance notice to make any changes to the way they prepare a dish, so we are letting users vote for their preferred dishes 2 days ahead of the current day. To keep the screen less cluttered, we are allowing users to vote for variations of 2 dishes per meal for lunch and dinner. In this effort toward a clean and quick-to-use interface, we choose not to go forward with interface designs that used more screen real estate with little additional benefit: up and down voting and pictures of dishes. Designs with two columns of choices also did not progress forward to keep consistency with the interface of the rest of the application and provide a cleaner look. We realize that by putting meal 1 and 2 first, we are giving those options more priority than nA, nB, and nC choices which are in the drop down portion. The drop down is used so that users do not have to keep all options expanded all of the time. Check boxes are used to vote for the dishes and the user can only for one option per dish. They can change their votes before the voting period ends by choosing a different option for each dish. Votes are automatically submitted. For meals in the future before 2 days in the future, there are buttons linked to see the full menu for those meals. After voting, a glowing right arrow pops up which is linked to a screen containing the results page for the meals that they voted on so far. It would fit the same screen height to keep it fluid.</p>
+			</div>
+
+			
+
+
+			<br></br>
+			<div class="col-lg-12">
+				<h3>Reflective Feedback</h3>
+				<p>The reflective feedback feature of the app also plays a large role in the overall app, but a little less so than the menu choosing feature. From prototype 0 to prototype 1.3, many changes were made from the user testing and feedback we got. When you click on give feedback from the homepage, you are taken to the first page, which maps all the dishes to locations in the actual dining hall. Tapping on any category lets you see all the dishes. One of the major changes we made to this screen was to combine it with the menu screen. While both screens served different purposes, they both displayed the same information. It made logical sense to combine the screens. </p>
+				<p>By each dish, there are two choices: nutrition and feedback. Initially, we also had a quick star rating system by each dish too, but realized from user testing that this information would be useless for the dining hall staff to make changes from, since different students had different reasons for rating a dish poorly or well.</p>
+				<p>Other features that exist within this page is the ability to open all dishes quickly, and search fuctionality, to find dishes, sorted by closest time served. Search functionality did not exist in the first prototypes, and came out of user feedback that showed that some users didn't remember where they picked up the dish from the dining hall, so they couldn't easily find the dish in the app. </p>
+			</div>
+			<div class="col-lg-12 centered">
+				<img src="assets/img/images/reflectiveFeedback.jpg" alt="" style="max-width:90%;max-height:425px">
+				<br></br>
+			</div><!-- col-lg-6 -->	
+			
 		</div>	
 
-		<div class="row">	<!-- APPENDIX -->
 			<div class="col-lg-12">
 				<br></br>
 				<h2>APPENDIX</h2>
@@ -224,6 +268,8 @@
 			</div>	
 		</div>	
 
+=======
+>>>>>>> e8a98493be7834450a3639f20d831f14aa3b917c
 		<br></br>
 
 	</div><!-- container -->
