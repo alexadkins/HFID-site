@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+    <title>The Real Keyser Soze</title>
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+  	<!--  navbar -->
+  	<div class="navbar navbar-inverse navbar-fixed-top">
+
+      <div class="container">
+
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">THE REAL KEYSER S<i class="fa fa-circle"></i>ZE</a>
+        </div>
+
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+
+          	<li>
+              <a href="team.html">THE TEAM</a>
+            </li>
+
+            <li class="dropdown">
+   			      <a class="dropdown-toggle" data-toggle="dropdown" href="#">INITIAL CONCEPTS <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+    				    <li><a href="index.html#brief">Project Brief</a></li>
+    				    <li><a href="index.html#inspirations">Inspirational Designs</a></li>
+    			    </ul>
+  			    </li>
+
+            <li>
+              <a href="needsAnalysis.html">NEEDS ANALYSIS</a>
+            </li>
+
+            <li>
+              <a href="designDevelopment.html">DESIGN DEVELOPMENT</a>
+            </li>
+            <li>
+              <a href="prototype.html">DIGITAL PROTOTYPE</a>
+            </li>
+
+            <li class="active">
+            	<a class="dropdown-toggle" data-toggle="dropdown" href="#">DESIGN REFINEMENT <span class="caret"></span></a>
+            	<ul class="dropdown-menu" role="menu">
+            		<li><a href="https://drive.google.com/file/d/0ByUQjmh4k8L4VjdmTEpnN2ZVTnM/view?usp=sharing">Heuristic Evaluation</a></li>
+              	</ul>	
+            </li>
+
+
+
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+
+	<div id="blue">
+		<div class="container">
+			<div class="row ">
+				<div class="col-lg-8">
+					<br><br><br><br>
+					<h1>Design Refinement</h1>
+					<p>Curated explanation of design changes based on prototype feasibility, user tests, and heuristic evaluations.</p>
+				</div>
+			</div><!-- row -->
+		</div><!-- container -->
+	</div><!--  bluewrap -->
+
+
+	<div class="container desc">
+		<div class="row">
+			
+			<div class="col-lg-5 centered">
+				<br>
+				<img src="assets/img/images/desRef_currentDesign.png" alt="" style="max-width:90%; max-height:375px; margin-bottom: 5px">	
+			</div><!-- col-lg-6 -->
+			<div class="col-lg-7">
+				<h2>THE CURRENT DESIGN</h2>
+				<p>	The current digital prototype is very similar to paper prototype 1.3 (see <a href="designDevelopment.html">Design Development</a>). Much of the feedback we received from user interviews and interactions prior to our Heuristic Evaluation we implemented in prototype 1.3, and these design changes carried over to our <a href='prototype.html'>initial digital prototype.</a> </p>
+
+				<p>	This current mobile app design focuses primarily on choosing the meals available in the dining hall beforehand, with additional functionality in menu display and navigation, and feedback for past meals. It works by initially setting up a user profile that contains users’ preferred dining halls and food restrictions. After this initial flow the user can navigate through the menu, feedback, and choosing menu screens. </p>
+				<p>A few major changes in the system model are underway due to feedback from the heuristic evaluation, some of which are outlined below. These changes have yet to be implemented, but will be incorporated into the next iteration of the interface design.</p>
+			</div>	
+		</div><!-- row -->
+		
+		
+		<hr>
+	
+
+		<div class="row">
+			<div class="col-lg-5 centered">
+				<br><br><br>
+				<img src="assets/img/images/desRef_modelChange.png" alt="" style="max-width:90%; max-height:375px; margin-bottom: 5px">	
+			</div><!-- col-lg-6 -->
+			<div class="col-lg-7">
+				<br><br>
+				<h2>WHAT HAS CHANGED?</h2>
+				<p><b>Tradeoffs To Bring Design Online</b> To bring our prototype online, we decided to leave out some of our intended functionality. We made the initial prototype with a series of images, with hotspot hyperlinks on the images to tie together multiple images. While this process was quick, it was not feasible to create all the possible screens. For this reason, we decided to leave out functionality like viewing the menu over multiple days, voting on dishes over multiple days, or quick accessing the menu. Another limitation of our prototype was that you could not interact with it completely like a traditional app. Gestures like swipe were impossible to implement, and were replaced by click functions. Further, functions like menu search would have been too time consuming to implement.</p>
+				<p><b>Response to Heuristic Evaluation</b> While our <a href="https://drive.google.com/file/d/0ByUQjmh4k8L4VjdmTEpnN2ZVTnM/view?usp=sharing">heuristic evaluation</a> gave us many problems to fix, there were two issues that came up that required big changes to our overall app design. </p>
+				<p>The first issue lead to a major redesign in the user's conceptual model and the design model of the app. During the heuristic evaulation, we found that the evaluating team didn't have a good understanding of how our app worked on first use, and that much of the navigation was unclear. Many of the specifics on voting for dishes were not being conveyed in an effective matter from the interface to the user. To fix this problem, we decided to overhaul the conceptual model of the design. In the diagram on the left, you can see the before and after our our redesign. In our initial design, we immediately put the user into the choosing page, which doubled as the home page. In our new design, we have split the home page from the choosing page, which gives us more room to explain how the app works, and simplifies the navigation scheme by bringing all features to the same level. We hope that this redesign of the system model will help first time users easily understand how the app works, while keeping the overall app easy to quick to navigate. </p>
+				<p>The other big change we will be making in our design involves the feedback feature. Currently, we allow the user to give feedback on a specific dish, by finding the dish they ate, and then giving writing feedback on said dish. We also provide the user a place to enter in general comments that doesn't necessarily fit in any category. Based on feedback from the heuristic evaluation, we are completely redesigning the feedback page to allow the user to simply give feedback on a general form that allows you to optionally enter in the dish that you are giving feedback on. Since the feedback is being read by a human being, we don't need to filter the feedback by the dish. This will make the feedback feature significantly simpler, and removes unnessary information from the feedback screen.</p>
+
+			</div>
+			
+		</div><!-- row -->
+
+		<hr>
+
+		<div class="row">
+			<div class="col-lg-5 centered">
+				<br><br><br>
+				<img src="assets/img/images/desRef_icons.png" alt="" style="max-width:90%; max-height:375px; margin-bottom: 5px">	
+			</div><!-- col-lg-6 -->
+			<div class="col-lg-7">
+				<br><br>
+				<h2>KEY INSIGHTS</h2>
+				<p>	A theme we have returned to again and again is that any interface that we build and understand is likely not going to as intuitive and understandable to others. We saw evidence of this again in our heuristic evaluation, when we received feedback that some aspects our application were difficult to understand and their purposes unclear.</p>
+				<p>In particular, we found that icons were a source of confusion throughout our app.. While icons provide a convienient way to save space in our tightly constrained app, while retaining the same information as a button with words, they created confusion when they didn't follow a clear standard. The figure shows all the icons we used in our app. While some of the icons were very clear, and made sense, others only made sense after you had used them once. For example, the fork and knife icon clearly did something related to food, but since the entire app is food related, it was not clear what purpose it served. The user had to click on the icon in order to understand what it did. One possible solution to this problem is to incorporate a tutorial screen at first time use, that can quickly introduce the users to the icon vocabulary used within the app. </p>
+				<p>Another major problem within our app was understanding how the menu choosing feature worked. While for us, as the designers, this feature made perfect sense, we found that our heuristic evaluators could not undertand the purpose without further explanation. The insight that we might need to include much more direction within the app has led to major changes within the app.</p>
+			</div>
+		</div><!-- row -->
+
+		<hr>
+
+		<div class="row">
+			<div class="col-lg-12">
+				<br><br>
+				<h2>QUESTIONS AND SHORTCOMINGS</h2>
+				<p>We are investigating moving our prototype onto html/css/js. The InvisionApp has limitations such as not saving data on user-inputted preferences and logins. This would hopefully decrease the number of changes we need to make from screen to screen in our prototype. We will also need to investigate how to make an effective tutorial for first time users to guide them and clear up any potential misunderstandings when using the application about what things do what.</p>
+			</div>
+			
+		</div><!-- row -->	
+
+		
+
+		<br></br>
+
+	</div><!-- container -->
+
+	
+	
+	<!-- FOOTER -->
+	<div id="f">
+		<div class="container">
+			<div class="row centered">
+				
+		
+			</div><!-- row -->
+		</div><!-- container -->
+	</div><!-- Footer -->
+
+
+	
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+  </body>
+</html>
