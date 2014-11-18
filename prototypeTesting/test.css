@@ -1,0 +1,28 @@
+table{
+    border: 1px solid black;
+    table-layout: fixed;
+    width: 200px;
+    background-color: red;
+}
+
+th, td {
+    border: 1px solid black;
+    overflow: hidden;
+    width: 100px;
+}
+
+input {
+    width:100;
+}
+
+#mobile {
+	width:300px;
+	height:550px;
+    background-color: #ADD8E6;
+/*    position: absolute;*/
+}
+
+#welcome {
+	text-align:center;
+    /*vertical-align: middle;*/
+}
