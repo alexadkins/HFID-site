@@ -1,0 +1,50 @@
+#table {
+	border: 1px solid black;
+	table-layout: fixed;
+	padding-left: 5px;
+	width: 436px;
+}
+
+#mobile {
+	width:446px;
+	height:876px;
+}
+
+#welcome{
+	text-align:center;
+}
+
+#DiningHallsFirstTime{
+	
+}
+
+.login{
+	width:200px;
+}
+
+.box-shadow-menu {
+  position: relative;
+  padding-left: 0px;
+}
+.box-shadow-menu:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.25em;
+  width: 1em;
+  height: 0.15em;
+  background: black;
+  box-shadow: 
+    0 0.25em 0 0 black,
+    0 0.5em 0 0 black;
+}
+
+.left
+{
+        float: left;
+        margin-left: 20px;
+}
+
+#content
+{
+}
