@@ -1,31 +1,74 @@
-#table {
-	border: 1px solid black;
-	table-layout: fixed;
-	padding-left: 5px;
-	width: 436px;
+/* Setup Screens */
+*{
+	margin: 0;
+	padding: 0;
 }
 
 #mobile {
-	width:446px;
-	height:876px;
+	width: 446px;
+	height: 793px;
+	margin: 0;
+	border: solid 1px black;
 }
 
+/* Welcome Screen */
 #welcome{
 	text-align:center;
+	font-family: Helvetica, sans-serif;
 }
+
+
+
+#welcome-header{
+	font-size: 38px;
+	font-weight: bold;
+	margin: 250px 0 30px;
+	padding: 5px;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizelegibility;
+}
+
+#welcome-description{
+	font-family: "Open Sans", sans-serif;
+	font-size: 17px;
+	letter-spacing: -1px;
+	margin: 5px 0 20px;
+	padding: 5px;
+}
+
+.login, .login-submit{
+	width: 200px;
+	margin: 3px;
+}
+
+.login{
+	height: 24px;
+	font-size: 16px;
+	padding: auto 5px;
+}
+
+.login-submit{
+	margin: 10px 0;
+	border: none;
+	background: #0191C8;
+	height: 30px;
+	text-transform: uppercase;
+	font-family: "Open Sans", sans-serif;
+	font-size: 15px;
+	border-radius: 3px;
+}
+/* End Welcome Screen */
+
+
+
 
 #DiningHallsFirstTime{
 	
 }
 
-#sidebar{
-	width:300px;
-	height:876px;
-}
 
-.login{
-	width:200px;
-}
+
+
 
 .box-shadow-menu {
   position: relative;
@@ -53,3 +96,42 @@
 #content
 {
 }
+
+/* Sidebar Formats */
+#sidebar{
+	background: #222;
+	width:300px;
+	height:793px;
+	border: solid 1px black;
+}
+
+.setup-title, .setup-selections{
+	margin: 5px 5px;
+	padding: 5px 5px;
+
+}
+
+.setup-title{
+	background-color: #323232;
+}
+
+.setup-selections{
+	background-color: #333;
+	cursor: pointer;
+}
+
+.setup-title p, .setup-selections p{
+	margin: 0;
+	padding: 0;
+	font-size: 25px;
+}
+
+.setup-title p{
+	font-family: Arial;
+}
+
+.setup-selections p{
+	
+}
+
+/* End Sidebar Formats */
