@@ -13,21 +13,29 @@
 	</head>
 
 	<body>
-		<a href="#menu" class="box-shadow-menu"></a>
-		<div class="left"><strong>Dietary Preferences</strong></div>
-		<br>
-		<div id="table">
+		<div id="mobile-setup">
+			<div id="setup-header">
+				<img src="assets/img/icons/access-sidebar.png" alt="sidebar icon"><span><strong> CHOOSE YOUR DIET</strong></span>
+			</div><!-- end setup-header -->
+			
 			<form>
-				<strong>CHOOSE YOUR DIET</strong><br>
-				VEGETARIAN<input type="radio" name="diet"><br>
-				VEGAN<input type="radio" name="diet"><br>
-				PESCETARIAN<input type="radio" name="diet"><br>
-				<strong>DIETARY RESTRICTIONS/ALLERGIES</strong><br>
-				GLUTEN<input type="checkbox"><br>
-				NUT<input type="checkbox"><br>
-				DAIRY<input type="checkbox"><br>
-				<input type="submit" value="DONE">
+				<ul>
+					<li>VEGETARIAN <span class="squaredFour">
+	<input type="checkbox" value="None" id="squaredFour" name="check" />
+	<label for="squaredFour"></label></span></li>
+					<li>VEGAN <input type="checkbox"></li>
+					<li>PESCETARIAN <input type="checkbox"></li>
+					<li><strong>DIETARY RESTRICTIONS</strong></li>
+					<li>GLUTEN <input type="checkbox"></li>
+					<li>NUT <input type="checkbox"></li>
+					<li>DAIRY <input type="checkbox"></li>
+				</ul>
+				
+				<div id="setup-footer">
+					<input type="submit" value="DONE">
+				</div><!-- end setup-footer -->
 			</form>
-		</div>
+			
+		</div><!-- end mobile-setup -->
 	</body>
 </html>

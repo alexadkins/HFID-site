@@ -8,27 +8,32 @@
 		<meta name="author" content="">
 		<link rel="shortcut icon" href="assets/ico/favicon.png">
 		<title>The Real Keyser Soze</title>
-		<link href="assets/css/bootstrap.css" rel="stylesheet">
 		<link href="assets/css/font-awesome.min.css" rel="stylesheet">
-		<link href="assets/css/main.css" rel="stylesheet">
 		<link href="assets/css/testapp.css" rel="stylesheet">
 	</head>
 
 	<body>
-		<div id="mobile">
-			<a href="#menu" class="box-shadow-menu"></a>
-			<div class="left"><strong>PICK YOUR DINING HALLS!</strong></div>
-			<br>
-			<div id="table">
-
-				Olin Dining Hall<input type="checkbox"><br>
-				Trim Dining Hall<input type="checkbox"><br>
-				Reynolds CC<input type="checkbox"><br>
-				Pandini's'<input type="checkbox"><br>
-				Lulu Chow Wang<input type="checkbox"><br>
-				<br><br><br><br><br>
-				<input type="submit" value="NEXT">
-
-			</div>
-		</div>
+		<div id="mobile-setup">
+			<div id="setup-header">
+				<img src="assets/img/icons/access-sidebar.png" alt="sidebar icon"><span><strong> PICK YOUR DINING HALLS</strong></span>
+			</div><!-- end setup-header -->
+			
+			<form>
+				<ul>
+					<li>Olin Dining Hall <span class="squaredFour">
+	<input type="checkbox" value="None" id="squaredFour" name="check" />
+	<label for="squaredFour"></label></span></li>
+					<li>Trim Dining Hall <input type="checkbox"></li>
+					<li>Reynolds CC <input type="checkbox"></li>
+					<li>Pandini's <input type="checkbox"></li>
+					<li>Lulu Chow Wang <input type="checkbox"></li>
+				</ul>
+				
+				<div id="setup-footer">
+					<input type="submit" value="NEXT">
+				</div><!-- end setup-footer -->
+			</form>
+			
+		</div><!-- end mobile-setup -->
 	</body>
+</html>

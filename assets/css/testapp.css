@@ -4,11 +4,14 @@
 	padding: 0;
 }
 
-#mobile {
+#mobile-setup{
 	width: 446px;
 	height: 793px;
 	margin: 0;
 	border: solid 1px black;
+	background: #191919;
+	color: #fff;
+	position: relative;
 }
 
 /* Welcome Screen */
@@ -56,68 +59,161 @@
 	font-family: "Open Sans", sans-serif;
 	font-size: 15px;
 	border-radius: 3px;
+	font-weight: bold;
 }
 /* End Welcome Screen */
 
+/* Dining Hall Choices and Dietary Preferences First Time Setup Screens */
 
+#setup-header {
+	font-family: "Trebuchet MS","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Tahoma,sans-serif;
+	font-size: 25px;
+	margin: 5px;
+}
 
+#mobile-setup form ul li{
+	font-family: Tahoma,Verdana,Segoe,sans-serif;
+	font-size: 25px;
+	margin: 5px;
+	padding: 10px;
+	background: #252525;
+}
+
+.squaredFour {
+	width: 20px;	
+	margin: 20px auto;
+	position: relative;
+}
+
+.squaredFour label {
+	cursor: pointer;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	top: 0;
+	border-radius: 4px;
+
+	-webkit-box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+	-moz-box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+	box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+	background: #fcfff4;
+
+	background: -webkit-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+	background: -moz-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+	background: -o-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+	background: -ms-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+	background: linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#b3bead',GradientType=0 );
+}
+
+.squaredFour label:after {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+	content: '';
+	position: absolute;
+	width: 9px;
+	height: 5px;
+	background: transparent;
+	top: 4px;
+	left: 4px;
+	border: 3px solid #333;
+	border-top: none;
+	border-right: none;
+
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+.squaredFour label:hover::after {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+	filter: alpha(opacity=30);
+	opacity: 0.5;
+}
+
+.squaredFour input[type=checkbox]:checked + label:after {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	opacity: 1;
+}
+
+#setup-footer{
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	margin-left: -150px;
+}
+
+#setup-footer input {
+	font-family: "Trebuchet MS","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Tahoma,sans-serif;
+	font-size: 30px;
+	text-align: center;
+	background: #3DB0FC;
+	color: #fff;
+	width: 300px;
+	height: 60px;
+	padding: 10px;
+	border: none;
+	border-radius: 4px;
+}
+
+/* Dining Halls Choices First Time Setup Screen */
 
 #DiningHallsFirstTime{
 	
 }
 
+/* End Dining Halls Choices First Time Setup Screen */
 
+/* Dietary Preferences First Time Setup Screen */
 
-
-
-.box-shadow-menu {
-  position: relative;
-  padding-left: 0px;
-}
-.box-shadow-menu:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0.25em;
-  width: 1em;
-  height: 0.15em;
-  background: black;
-  box-shadow: 
-    0 0.25em 0 0 black,
-    0 0.5em 0 0 black;
+#mobile-setup form ul li strong{
+	font-family: Tahoma,Verdana,Segoe,sans-serif;
+	font-size: 25px;
+	margin-left: -5px;
 }
 
-.left
-{
-        float: left;
-        margin-left: 22px;
-}
-
-#content
-{
-}
+/* End Dietary Preferences First Time Setup Screen */
 
 /* Sidebar Formats */
+
 #sidebar{
-	background: #222;
+	background: #333;
 	width:300px;
 	height:793px;
 	border: solid 1px black;
+	color: white;
 }
 
-.setup-title, .setup-selections{
-	margin: 5px 5px;
-	padding: 5px 5px;
+#side-header{
+	font-family: "Trebuchet MS","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Tahoma,sans-serif;
+	font-size: 25px;
+	margin: 5px;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizelegibility;
+}
 
+#side-header .sidebar-icon {
+	background: url('assets/img/icons/access-sidebar.png') center left no-repeat;
+	text-indent: -9999px;
 }
 
 .setup-title{
-	background-color: #323232;
+	background-color: #444;
+	margin: 5px;
+	padding: 10px;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizelegibility;
 }
 
 .setup-selections{
-	background-color: #333;
-	cursor: pointer;
+	margin: 5px;
+	background-color: #444;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizelegibility;
 }
 
 .setup-title p, .setup-selections p{
@@ -126,12 +222,16 @@
 	font-size: 25px;
 }
 
-.setup-title p{
-	font-family: Arial;
+.setup-title p, .setup-selections p{
+	font-family: Tahoma,Verdana,Segoe,sans-serif;
 }
 
-.setup-selections p{
-	
+.setup-selections p a{
+	display: block;
+	text-decoration: none;
+	color: #fff;
+	padding: 10px;
+	cursor: pointer;
 }
 
 /* End Sidebar Formats */
