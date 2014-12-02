@@ -27,6 +27,18 @@
 			.state("home",{
 				url:"/home",
 				templateUrl: "pages/home.html"
+			})
+			.state("home.choosing",{
+				url:"/choosing",
+				templateUrl: "pages/home.choosing.html",
+			}).
+			state("home.menu",{
+				url:"/menu",
+				templateUrl:"pages/home.menu.html"
+			}).
+			state("home.feedback",{
+				url:"/feedback",
+				templateUrl:"pages/home.feedback.html"
 			});
 	});
 
