@@ -145,3 +145,14 @@ button:focus {
 .mainContent span {
   margin-right: 5px;
 }
+
+/* Home Tutorial For Inexperienced Users */
+
+.tutorial-description {
+	margin: 6px;
+	padding: 10px;
+	background: #449bb5;
+	color: #fff;
+}
+
+/* End Home Tutorial Screen */
