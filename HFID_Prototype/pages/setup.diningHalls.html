@@ -1,0 +1,12 @@
+<div class="mainContent">
+	<p>Choose all of the dining halls you go to. Each of the dining halls you choose will be accesible within the app.</p>
+	<ul>
+		<li ng-class="{selected: select, unselected: !select}" ng-repeat="hall in diningHalls" ng-click="select = !select" ng-init="select=false">
+			<span ng-switch="select">
+				<span ng-switch-when="false" class='fa fa-circle-thin'></span>
+				<span ng-switch-when="true" class='fa fa-check-circle'></span>
+			</span>{{hall}}
+		</li>
+	</ul>	
+	<div class="nextButton"><a ui-sref="setup.restrictions" class='fa fa-arrow-circle-right fa-3x'></a></div>
+</div>
