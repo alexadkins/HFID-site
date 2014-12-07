@@ -2,23 +2,168 @@
 
 .tutorial-description {
 	margin: 5px;
-	padding: 10px;
-	background: #449bb5;
+	padding: 5px;
+	background: #6984fe;
 	color: #fff;
-	height: 100px;
+	height: 141px;
 	border-radius: 5px;
 }
 
 .tutorial-description h1{
-	padding: 0;
+	display: block;
 	margin: 0;
-	font-size: 20px;
+	padding: 5px;
+	font-size: 30px;
+	text-height: 45px;
+	top: 10px;
 }
 
 .tutorial-description p {
 	margin: 0;
-	padding: 5px;
-	font-size: 14px;
+	padding: 5px 0;
+	font-size: 16px;
+	text-align: center;
+}
+
+a:active {
+	background: #1f31ff;
 }
 
 /* End Home Tutorial Screen */
+
+/* Top Navigation Bar */
+
+nav ul {
+	list-style: none;
+	margin: 1px;
+	padding: 0;
+	text-indent: none;
+	display: block;
+}
+
+nav ul li{
+	display: inline-block;
+	margin: -1px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border: solid 1px black;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	width: 95px;
+	background: #4879e3;
+	text-align: center;
+	font-size: 16px;
+	color: #dedede;
+	font-weight: bold;
+}
+
+nav ul li.home-active {
+	background: #002bff;
+	width: 105px;
+	color: #fff;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+/* End Top Navigation Bar */
+
+/* Date Bars */
+
+.date-bar {
+	display: block;
+	margin: -5px 0;
+	background: #1b8ddc;
+	clear: both;
+}
+
+.date-bar h1 {
+	padding: 5px;
+	font-size: 16px;
+	color: #fff;
+}
+
+/* End Date Bars */
+
+/* Meal Option Formats */
+
+.meal-choosing {
+	display: block;
+	position: relative;
+	width: 100%;
+}
+
+.meal {
+	margin-top: 0px;
+	display: block;
+	float: left;
+	height: 240px;
+	width: 24px;
+	background: #555;
+}
+
+.meal h1 {
+	text-align: center;
+	font-size: 20px;
+	word-wrap: break-word;
+	padding-top: 45px;
+}
+
+.dish {
+	float: left;
+	word-wrap: break-word;
+	height: 240px;
+	width: 20px;
+	padding: 50% 0;
+	background: #666;
+}
+
+.dish h2 {
+	margin: 0;
+	text-align: center;
+	font-size: 17px;
+	padding: 5px 4px;
+}
+
+.dish hr {
+	margin: 5px 0;
+}
+
+.dish-options {
+	float: left;
+	height: 240px;
+	width: 300px;
+}
+
+.dish-options ul {
+	list-style: none;
+	padding: 5px;
+}
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	content: "";
+	clear: both;
+	height: 0;
+}
+
+/* End Meal Option Formats */
+
+/* Choosing Submit Button */
+
+.submit-votes {
+	position: relative;
+}
+
+.submit-votes input {
+	background: #1d8fcc;
+	position: absolute;
+	width: 90%;
+	height: 40px;
+	bottom: 0px;
+	border: none;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+/* End Submit Button */
