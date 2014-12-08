@@ -1,1 +1,105 @@
-<p>Choosing</p>
+<head>
+	<link href="../HFID_Prototype/css/separateStylesheet.css" rel="stylesheet">
+</head>
+
+<div class="header">
+	<div id="title"><b>Choosing</b></div>
+</div>
+
+<div class="top-nav-bar">
+	<nav>
+		<ul>
+			<li class="home-active"><a ui sref="#">Choosing</a></li>
+			<li><a ui sref="home.menu">Menu</a></li>
+			<li><a ui sref="home.feedback">Feedback</a></li>
+		</ul>
+	</nav>
+</div>
+
+<div class="date-bar">
+	<h1>In 2 Days (Wednesday, November 5th)</h1>
+</div>
+
+<div class="meal-choosing" class="clearfix">
+	<div class="meal">
+		<h1>LUNCH</h1>
+	</div><!-- end meal -->
+
+	<div class="dish">
+		<h2>DISH 1</h2>
+		<hr>
+		<h2>DISH 2</h2>
+	</div><!-- end dish -->
+
+	<div class="dish-options">
+		<form>
+			<ul>
+				<li><label><input type="radio" name="lunch-dish1-option"> <span>Dish 1a</span></label></li>
+				
+				<li><label><input type="radio" name="lunch-dish1-option"> <span>Dish 1b</span></label></li>
+				
+				<li><label><input type="radio" name="lunch-dish1-option"> <span>Dish 1c</span></label></li>
+				
+				<li><label><input type="radio" name="lunch-dish1-option"> <span>Dish 1d</span></label></li>
+			</ul>
+			
+			<hr>
+			
+			<ul>
+				<li><label><input type="radio" name="lunch-dish2-option"> <span>Dish 2a</span></label></li>
+				
+				<li><label><input type="radio" name="lunch-dish2-option"> <span>Dish 2b</span></label></li>
+				
+				<li><label><input type="radio" name="lunch-dish2-option"> <span>Dish 2c</span></label></li>
+				
+				<li><label><input type="radio" name="lunch-dish2-option"> <span>Dish 2d</span></label></li>
+			</ul>
+		</form>
+	</div><!-- end dish-options -->
+</div><!-- end dish-choosing -->
+
+<div class="meal-choosing" class="clearfix">
+	<div class="meal">
+			<h1>DINNER</h1>
+		</div><!-- end meal -->
+
+		<div class="dish">
+			<h2>DISH 1</h2>
+			<hr>
+			<h2>DISH 2</h2>
+		</div><!-- end dish -->
+
+		<div class="dish-options">
+			<form>
+				<ul>
+					<li><label><input type="radio" name="lunch-dish3-option"> <span>Dish 1a</span></label></li>
+					
+					<li><label><input type="radio" name="lunch-dish3-option"> <span>Dish 1b</span></label></li>
+					
+					<li><label><input type="radio" name="lunch-dish3-option"> <span>Dish 1c</span></label></li>
+					
+					<li><label><input type="radio" name="lunch-dish3-option"> <span>Dish 1d</span></label></li>
+				</ul>
+				
+				<hr>
+				
+				<ul>
+					<li><label><input type="radio" name="lunch-dish4-option"> <span>Dish 2a</span></label></li>
+					
+					<li><label><input type="radio" name="lunch-dish4-option"> <span>Dish 2b</span></label></li>
+					
+					<li><label><input type="radio" name="lunch-dish4-option"> <span>Dish 2c</span></label></li>
+					
+					<li><label><input type="radio" name="lunch-dish4-option"> <span>Dish 2d</span></label></li>
+			</ul>
+		</form>
+	</div><!-- end dish-options -->
+</div><!-- end dish-choosing -->
+	
+<div class="date-bar">
+	<h1>In 3 Days (Thursday, November 6th)</h1>
+</div>
+
+<div class="submit-votes">
+	<input type="submit" value="SUMBIT VOTES" ui sref="home.choosing.results">
+</div>

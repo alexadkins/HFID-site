@@ -92,29 +92,32 @@ nav ul li.home-active {
 	width: 100%;
 }
 
+.meal-choosing, .meal, .dish, .dish-options {
+	height: 300px;
+}
+
 .meal {
 	margin-top: 0px;
 	display: block;
 	float: left;
-	height: 240px;
 	width: 24px;
 	background: #555;
 }
 
 .meal h1 {
 	text-align: center;
-	font-size: 20px;
+	font-size: 23px;
 	word-wrap: break-word;
-	padding-top: 45px;
+	padding: 50% 0;
 }
 
 .dish {
 	float: left;
 	word-wrap: break-word;
-	height: 240px;
 	width: 20px;
 	padding: 50% 0;
-	background: #666;
+	background: #aaa;
+	margin-left: 0;
 }
 
 .dish h2 {
@@ -124,19 +127,43 @@ nav ul li.home-active {
 	padding: 5px 4px;
 }
 
-.dish hr {
-	margin: 5px 0;
+.meal h1, .dish h2 {
+	font-family: monaco, Consolas;
+}
+
+.dish hr, .dish-options hr {
+	border: none;
+	height: 3px;
+	margin: 0;
+	background: #fff;
 }
 
 .dish-options {
 	float: left;
-	height: 240px;
-	width: 300px;
+	width: 260px;
+	margin: 0;
+	background: #80B5FF;
+	padding: 0;
 }
 
-.dish-options ul {
+.dish-options form ul {
 	list-style: none;
-	padding: 5px;
+	padding: 0;
+	margin: 0;
+}
+
+.dish-options form ul li {
+	text-indent: 3px;
+	padding: 3px;
+	margin: 4px;
+	background: #006AFF;
+	color: #fff;
+	font-size: 18px;
+	height: 26px;
+}
+
+.dish-options form ul li label:active {
+	background: #B0D1FF;
 }
 
 /* End Home Tutorial Screen */
@@ -219,14 +246,13 @@ nav ul li.home-active {
 
 /* Choosing Submit Button */
 
-.submit-votes {
-	position: relative;
-}
 
 .submit-votes input {
 	background: #1d8fcc;
 	position: absolute;
 	width: 90%;
+	margin-left: -45%;
+	left: 50%;
 	height: 40px;
 	bottom: 0px;
 	border: none;
