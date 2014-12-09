@@ -181,6 +181,7 @@ nav ul li.home-active {
 	background: #B0D1FF;
 }
 
+<<<<<<< HEAD
 /* End Home Tutorial Screen */
 
 
@@ -249,6 +250,8 @@ nav ul li.home-active {
     background: -o-linear-gradient(#fff, #999);
 }
 
+=======
+>>>>>>> 924544b74ab4e639e8c3b1bae2870d8fb467bd00
 .clearfix:after {
 	visibility: hidden;
 	display: block;
