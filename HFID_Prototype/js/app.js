@@ -217,11 +217,11 @@
 
 		$scope.changeDay = function(direction){
 			var maxDate = 6;
-			if(direction == 0){
+			if(direction == 0 && $scope.currentDay < 6 ){
 				$scope.currentDay = $scope.currentDay+1;
 
 			}
-			if(direction == 1){
+			if(direction == 1 && $scope.currentDay > 0 ){
 				$scope.currentDay = $scope.currentDay-1;
 			}	
 			$scope.noMoreFuture = false;
