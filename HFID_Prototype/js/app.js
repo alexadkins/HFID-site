@@ -45,6 +45,10 @@
 			state("home.splash",{
 				url:"/splash",
 				templateUrl:"pages/home.splash.html"
+			}).
+			state("about",{
+				url:"/about",
+				templateUrl:"pages/about.html"
 			});
 	});
 
