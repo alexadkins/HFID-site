@@ -32,6 +32,12 @@ a:active {
 /* End Home Tutorial Screen */
 
 /* Top Navigation Bar */
+nav {
+	margin: 0;
+	height: 28px;
+	width: 100%;
+	background: #449bb5;
+}
 
 nav ul {
 	list-style: none;
@@ -55,6 +61,7 @@ nav ul li{
 	font-size: 16px;
 	color: #dedede;
 	font-weight: bold;
+	position: relative;
 }
 
 nav ul li.home-active {
@@ -63,6 +70,7 @@ nav ul li.home-active {
 	color: #fff;
 	font-size: 18px;
 	font-weight: bold;
+	bottom: 1px;
 }
 
 /* End Top Navigation Bar */
@@ -71,7 +79,7 @@ nav ul li.home-active {
 
 .date-bar {
 	display: block;
-	margin: -5px 0;
+	margin: -8px 0;
 	background: #1b8ddc;
 	clear: both;
 }
@@ -92,8 +100,9 @@ nav ul li.home-active {
 	width: 100%;
 }
 
-.meal-choosing, .meal, .dish, .dish-options {
+.meal-choosing, .meal, .dish, .dish-options, .results-left, .results-right {
 	height: 300px;
+	margin-bottom: 3px;
 }
 
 .meal {
@@ -108,23 +117,25 @@ nav ul li.home-active {
 	text-align: center;
 	font-size: 23px;
 	word-wrap: break-word;
-	padding: 50% 0;
+	padding: 0;
+	margin: 280% 0;
 }
 
 .dish {
 	float: left;
 	word-wrap: break-word;
 	width: 20px;
-	padding: 50% 0;
+	padding: 0;
 	background: #aaa;
 	margin-left: 0;
 }
 
 .dish h2 {
-	margin: 0;
+	margin: 95% 0;
 	text-align: center;
 	font-size: 17px;
 	padding: 5px 4px;
+	word-spacing: 20px;
 }
 
 .meal h1, .dish h2 {
@@ -162,6 +173,10 @@ nav ul li.home-active {
 	height: 26px;
 }
 
+.dish-options form ul .alternate-color-choice {
+	background: #008DB8;
+}
+
 .dish-options form ul li label:active {
 	background: #B0D1FF;
 }
@@ -176,8 +191,26 @@ nav ul li.home-active {
 
 /* End Meal Option Formats */
 
-/* Choosing Submit Button */
+/* Sticky Submit */
+nav, .page-wrap {
+	height: 100%;
+}
 
+.page-wrap {
+  min-height: 100%;
+  /* equal to submit height */
+	margin: 0 auto -40px;
+	height: auto !important;
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+	width: 90%;
+}
+
+/* End Sticky Submit */
+
+/* Choosing Submit Button */
 
 .submit-votes input {
 	background: #1d8fcc;
@@ -193,3 +226,43 @@ nav ul li.home-active {
 }
 
 /* End Submit Button */
+
+/* Choosing Results */
+
+.results-left {
+	float: left;
+	width: 220px;
+}
+
+.results-right {
+	float: left;
+	width: 40px;
+}
+
+.results-left, .results-right {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.dish-results ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.dish-results ul li {
+	text-indent: 3px;
+	padding: 0;
+	margin: 0;
+	background: #006AFF;
+	color: #fff;
+	font-size: 18px;
+	height: 30px;
+}
+
+.dish-results ul li.alternate-color-choice {
+	background: #008DB8;
+}
+
+/* End Choosing Results */
