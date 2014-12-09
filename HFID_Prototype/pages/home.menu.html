@@ -1,8 +1,8 @@
-<div id="dayBar"><span ng-class="{'fa fa-angle-left fa-lg': !noMorePast}"></span>Monday<span ng-class="{'fa fa-angle-right fa-lg': !noMoreFuture}"></span></div>
+<div id="dayBar"><span ng-class="{'fa fa-angle-left fa-lg': !noMorePast}" ng-click="changeDay(1)"></span>{{menuItems[currentDay].date}}<span ng-class="{'fa fa-angle-right fa-lg': !noMoreFuture}" ng-click="changeDay(0)"></span></div>
 <div id="mealBar">
-	<div class="selections"><span>Breakfast</span></div> 
-	<div class="selections active"><span class="active">Lunch</span></div> 
-	<div class="selections"><span>Dinner</span></div> 
+	<div class="selections" ng-click="changeMeal(0)"><span ng-class="{active : mealNumber==0}">Breakfast</span></div> 
+	<div class="selections" ng-click="changeMeal(1)"><span ng-class="{active : mealNumber==1}">Lunch</span></div> 
+	<div class="selections" ng-click="changeMeal(2)"><span ng-class="{active : mealNumber==2}">Dinner</span></div> 
 </div>
 <div id="optionsBar" ng-click="viewAll()" ng-class="{active: everythingOpen }"><span class='fa fa-expand'></span> View all</div>
 <ul id="menu">
