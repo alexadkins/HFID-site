@@ -1,1 +1,18 @@
-<p>Menu</p>
+<div id="dayBar"><span ng-class="{'fa fa-angle-left fa-lg': !noMorePast}"></span>Monday<span ng-class="{'fa fa-angle-right fa-lg': !noMoreFuture}"></span></div>
+<div id="mealBar">
+	<div class="selections"><span>Breakfast</span></div> 
+	<div class="selections active"><span class="active">Lunch</span></div> 
+	<div class="selections"><span>Dinner</span></div> 
+</div>
+<div id="optionsBar" ng-click="viewAll()" ng-class="{active: everythingOpen }"><span class='fa fa-expand'></span> View all</div>
+<ul id="menu">
+	<li ng-repeat="station in menuItems[currentDay][selectedMeal]"  class="station">
+		<p ng-click="station.open = !station.open; checkStatus(station)">{{station.stationTitle}} <span ng-class="{'fa fa-angle-down' : station.open, 'fa fa-angle-right' : !station.open }"></span></p>
+		<ul ng-show="station.open" id="menu">
+			<li ng-repeat="meal in station.stationContents" class="meal">{{meal}}</li>
+		</ul>	
+	</li>
+</ul>
+
+
+
