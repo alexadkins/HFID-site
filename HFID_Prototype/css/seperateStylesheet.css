@@ -2,16 +2,18 @@
   font-weight: 300;
   font-size: 14px;
   padding: 0 10px;
+  margin-top: 4px;
 }
 
 .subTitle{
-	background-color: #D8CEF6;
+	background-color: #449BB5;
 	font-size: 18px;
 	text-align: center;
-	margin-top: 5px;
+	color: white;
+	margin-top: 6px;
 	padding: auto;
 	height: 40px;
-    line-height:2em;
+    line-height:2.2em;
 
 }
 .centerMargin{
@@ -26,7 +28,10 @@
   display: block;
   bottom: 20px;
   text-align: center;
+  color: #449BB5;
 }
+
+
 .modalDialog {
 	position: fixed;
 	font-family: Arial, Helvetica, sans-serif;
