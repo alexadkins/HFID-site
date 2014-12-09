@@ -1,0 +1,23 @@
+<p class = "TitlePage">Feedback</p>
+<div class="mainContent01">
+	<p>Write your comment here, we will do our best to satisfy it! Please be polite</p>
+
+<form action="demo_form.asp">
+<input type="text" name="Comment" required><br></input>
+
+<a class = "nextButton" href="#openModal"><span class="fa fa-arrow-circle-right fa-3x" id="burger"></span></a>
+
+<div id="openModal" class="modalDialog">
+	<div>
+		<a href="#close" title="Close" class="close">X</a>
+		<h2>Modal Box</h2>
+		<p>This is a sample modal box that can be created using the powers of CSS3.
+</p>
+		<p>You could do a lot of things here like have a pop-up ad that shows when your website loads, or create a login/register form for users.</p>
+	</div>
+</div>
+
+<input type="text" name="Comment" required><br></input>
+
+</form>
+

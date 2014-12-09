@@ -125,7 +125,7 @@
 
 	app.controller("modalController", function($scope, ngDialog){
 		$scope.clickToOpen = function () {
-       		ngDialog.open({ template: 'pages/feedbackModal.html' });
+       		ngDialog.open({ template: 'pages/feedbackModal.html', className: 'ngdialog-theme-default' });
 
     	};
 
