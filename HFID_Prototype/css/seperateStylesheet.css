@@ -1,3 +1,4 @@
+
 .mainContent1 p {
   font-weight: 300;
   font-size: 14px;
@@ -5,19 +6,23 @@
 }
 
 .subTitle{
-	background-color: #D8CEF6;
+	background-color: #449bb5;
 	font-size: 18px;
+	color: white;
 	text-align: center;
-	margin-top: 5px;
+	margin-top: 3px;
 	padding: auto;
 	height: 40px;
     line-height:2em;
 
 }
+.submitButton{
+	text-align: center;
+	color: #449bb5;
+	margin-left: 125px;
+}
 .centerMargin{
 	text-align: center;
-	margin-left: 5px;
-	margin-right: 5px;
 }
 .textBoxText{
 	color: #BDBDBD;
@@ -43,23 +48,7 @@
 	pointer-events: none;
 }
 
-.modalDialog:target {
-	opacity:1;
-	pointer-events: auto;
-}
 .center1{
 	text-align: center;
 }
-.modalDialog > div {
-	width: 400px;
-	position: relative;
-	margin: 10% auto;
-	padding: 5px 20px 13px 20px;
-	border-radius: 10px;
-	background: #fff;
-	background: -moz-linear-gradient(#fff, #999);
-	background: -webkit-linear-gradient(#fff, #999);
-	background: -o-linear-gradient(#fff, #999);
-}
-
 
