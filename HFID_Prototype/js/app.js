@@ -39,6 +39,10 @@
 			state("home.feedback",{
 				url:"/feedback",
 				templateUrl:"pages/home.feedback.html"
+			}).
+			state("home.splash",{
+				url:"/splash",
+				templateUrl:"pages/home.splash.html"
 			});
 	});
 
