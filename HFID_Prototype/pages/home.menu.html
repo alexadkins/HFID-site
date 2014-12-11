@@ -9,7 +9,7 @@
 	<li ng-repeat="station in menuItems[currentDay][selectedMeal]"  class="station">
 		<p ng-click="station.open = !station.open; checkStatus(station)">{{station.stationTitle}} <span ng-class="{'fa fa-angle-down' : station.open, 'fa fa-angle-right' : !station.open }"></span></p>
 		<ul ng-show="station.open" id="menu">
-			<li ng-repeat="meal in station.stationContents" class="meal">{{meal}}</li>
+			<li ng-repeat="meal in station.stationContents" class="dishOptions">{{meal}}</li>
 		</ul>	
 	</li>
 </ul>

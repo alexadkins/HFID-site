@@ -214,14 +214,14 @@ button:focus {
 #menu .station p span {
   padding-left: 15px;
 }
-#menu .meal {
+#menu .dishOptions {
   font-size: 20px;
   font-weight: 300;
   padding: 6px 0;
   padding-left: 5px;
   color: #449bb5;
 }
-#menu .meal:nth-child(even) {
+#menu .dishOptions:nth-child(even) {
   border-top: 1px dotted rgba(68, 155, 181, 0.5);
   border-bottom: 1px dotted rgba(68, 155, 181, 0.5);
 }
