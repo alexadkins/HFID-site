@@ -24,6 +24,11 @@
 				templateUrl: "pages/setup.restrictions.html",
 				controller: 'restrictionsController'
 			})
+			.state("restrictions",{
+				url:"/restrictions",
+				templateUrl: "pages/restrictions.html",
+				controller: 'restrictionsController'
+			})
 			.state("home",{
 				url:"/home",
 				templateUrl: "pages/home.html"
@@ -58,23 +63,27 @@
 	});
 
 	app.controller("diningController",function($scope,$rootScope){
-		$scope.chosenStatus = function(hallName, hallStatus) {
-			$rootScope.chosenDHs[hallName] = hallStatus
-			console.log($rootScope.chosenDHs)
+		$scope.chosenStatus = function(hall, hallStatus) {
+			hall.selected = hallStatus
 		}
 
-		$scope.diningHalls = ["Olin","Trim", "Reynolds"];
-		$rootScope.chosenDHs = []
+		$rootScope.diningHalls = [
+								{name: "Olin", selected: false},
+								{name: "Trim", selected: false},
+								{name: "Reynolds", selected: false}
+								];
 	});
 
 	app.controller("restrictionsController", function($scope,$rootScope){
-		$scope.chosenStatus = function(restName, restStatus) {
-			$rootScope.chosenRest[restName] = restStatus
-			console.log($rootScope.chosenRest)
+		$scope.chosenStatus = function(restrict, restStatus) {
+			restrict.selected = restStatus
 		}
 
-		$scope.restrictions = ["Vegan","Gluten Free", "Vegetarian"];
-		$rootScope.chosenRest = []
+		$rootScope.restrictions = [
+								{name: "Vegan", selected: false},
+								{name: "Gluten Free", selected: false},
+								{name: "Vegetarian", selected: false}
+								];
 
 
 	});
