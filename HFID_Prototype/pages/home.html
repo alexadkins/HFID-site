@@ -1,18 +1,23 @@
-<!-- <div ui-view> -->
-    <div id="sp-nav">
-        <li>testing</li>
-        <li>123</li>
-    <!-- put your menu in here -->
+<!-- <div ui-view>  -->
+    <div id="sp-nav" class="wide">
+        <div class="sidebar" ng-controller="sidebarController">
+            <div id="sidebar-header" class="header">
+                <div id="title" class="sidebar-title"><b>FOODBACK</b></div>
+            </div>
+            <li ng-repeat="item in sidebarItems" class="sidebarBar">{{item}}</li>
+        </div>
     </div>
 
     <div id="sp-page">
+        <div ng-init="overlayOn=false">
         <div class="header">
             <span></span>
             <span>
-                <i class="fa fa-bars" ng-click="$spMenu.toggle()"></i>
+                <i class="fa fa-bars fa-lg" ng-click="$spMenu.toggle(); overlayOn = !overlayOn"></i>
             </span>
-            <span id="title"><b>HOMEPAGE</b></span>
+            <span id="title" class="home-title"><b>HOMEPAGE</b></span>
             </div>
-    <div ui-view><!-- put your page content in here --></div>
+        <div ui-view></div>
+        <div ng-show="overlayOn" id="overlay" class="check-element overlay-show-hide" style="clear:both;"></div>
     </div>
 <!-- </div> -->

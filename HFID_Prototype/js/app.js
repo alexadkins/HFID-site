@@ -67,6 +67,11 @@
 
 	});
 
+	app.controller("sidebarController", function($scope){
+		$scope.sidebarItems = ["Dietary Preferences","Olin Dining Hall", "About", "Help"];
+
+	});
+
 	app.controller("menuCont", function($scope){
 		$scope.currentDay = 0;
 		$scope.mealNumber = 0;
