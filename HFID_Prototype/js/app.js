@@ -31,6 +31,7 @@
 			.state("home.choosing",{
 				url:"/choosing",
 				templateUrl: "pages/home.choosing.html",
+				controller: "choosingController"
 			}).
 			state("home.menu",{
 				url:"/menu",
@@ -248,6 +249,56 @@
 		}
 
 
+	});
+
+	app.controller("choosingController", function($scope){
+		$scope.mealData = [{date : "Wednesday", 
+							'lunch' : [{names:['Macaroni and Cheese','Spaghetti and Marinara','Fettucine Alfredo', 'Ravioli Bar'], chosen: 4, results: false},{names:['Cheese Pizza',"Florentine Pizza", "Meatlovers Pizza", "Macaroni Pizza"], chosen: 4, results:false}],
+							'dinner': [{names:['Herb Grilled Chicken','Kung Pao Chicken','Peruvian Lime Chicken','Chicken Breast Saltimbocca'], chosen: 4, results: false}, {names:['Herb Grilled Chicken','Kung Pao Chicken','Peruvian Lime Chicken','Chicken Breast Saltimbocca'], chosen:4, results:false}]
+							}];
+
+		$scope.callResult = function(){
+			for(var i=0; i<$scope.mealData.length; i++){
+				for(var l=0; l<2; l++){
+					if($scope.mealData[i]['lunch'][l].chosen != 4){
+						$scope.mealData[i]['lunch'][l].results = true;
+					}
+					if($scope.mealData[i]['dinner'][l].chosen != 4){
+						$scope.mealData[i]['dinner'][l].results = true;
+					}
+					
+					
+				}	
+			}
+		}				
+
+		$scope.selectChoice = function(date,mealType,mealNumber,optionChoice){
+			var day = $scope.mealData.indexOf(date);
+			var mealChoice = $scope.mealData[day][mealType].indexOf(mealNumber);
+			var choiceNumber = $scope.mealData[day][mealType][mealChoice].names.indexOf(optionChoice);
+			if($scope.mealData[day][mealType][mealChoice].chosen == choiceNumber){
+				$scope.mealData[day][mealType][mealChoice].chosen = 4;
+				
+			}
+			else{
+				$scope.mealData[day][mealType][mealChoice].chosen = choiceNumber;
+	
+			}
+			
+		}	
+
+		$scope.checkIfSelected = function(date, mealType,mealNumber, optionChoice){
+			var day = $scope.mealData.indexOf(date);
+			var mealChoice = $scope.mealData[day][mealType].indexOf(mealNumber);
+			var choiceNumber = $scope.mealData[day][mealType][mealChoice].names.indexOf(optionChoice);
+			if(choiceNumber == $scope.mealData[day][mealType][mealChoice].chosen){
+				return false;
+			}
+			else{
+				return true;
+			}
+		}				
+							
 	});
 
 
