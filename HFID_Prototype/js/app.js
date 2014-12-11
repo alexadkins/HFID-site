@@ -1,5 +1,5 @@
 (function(){
-	var app= angular.module('Foodback', ['ui.router', 'ngDialog']);
+	var app= angular.module('Foodback', ['ui.router', 'ngDialog','shoppinpal.mobile-menu']);
 
 	app.config(function($stateProvider, $urlRouterProvider){
 		$urlRouterProvider.otherwise("/login");
@@ -23,6 +23,11 @@
 				url:"/restrictions",
 				templateUrl: "pages/setup.restrictions.html",
 				controller: 'restrictionsController'
+			})
+			.state("restrictions",{
+				url:"/restrictions",
+				templateUrl: "pages/restrictions.html",
+				controller: 'restrictionsFinalController'
 			})
 			.state("home",{
 				url:"/home",
@@ -57,13 +62,47 @@
 		
 	});
 
-	app.controller("diningController",function($scope){
-		$scope.diningHalls = ["Olin","Trim", "Reynolds"];
+	app.controller("diningController",function($scope,$rootScope){
+		$scope.chosenStatus = function(hall, hallStatus) {
+			hall.selected = hallStatus
+		}
+
+		$rootScope.diningHalls = [
+								{name: "Olin", selected: false},
+								{name: "Trim", selected: false},
+								{name: "Reynolds", selected: false}
+								];
+	});
+
+	app.controller("restrictionsController", function($scope,$rootScope){
+		$scope.chosenStatus = function(restrict, restStatus) {
+			restrict.selected = restStatus
+		}
+
+		$rootScope.restrictions = [
+								{name: "Vegan", selected: false},
+								{name: "Gluten Free", selected: false},
+								{name: "Vegetarian", selected: false}
+								];
 
 	});
 
-	app.controller("restrictionsController", function($scope){
-		$scope.restrictions = ["Vegan","Gluten Free", "Vegetarian"];
+	app.controller("restrictionsFinalController", function($scope,$rootScope){
+		if ($rootScope.restrictions) {
+			$scope.restrictions = $rootScope.restrictions
+		}
+		else {
+			$rootScope.restrictions = [
+								{name: "Vegan", selected: false},
+								{name: "Gluten Free", selected: false},
+								{name: "Vegetarian", selected: false}
+								];
+		}
+		
+	});
+
+	app.controller("sidebarController", function($scope,$rootScope){
+		$scope.sidebarItems = ["Dietary Preferences","Olin Dining Hall", "About", "Help"];
 
 	});
 
