@@ -1,5 +1,18 @@
-<div class="header">			
-	<span></span>
-	<div id="title"><b>HOMEPAGE</b></div>
-</div>	
-<div ui-view></div>
+<!-- <div ui-view> -->
+    <div id="sp-nav">
+        <li>testing</li>
+        <li>123</li>
+    <!-- put your menu in here -->
+    </div>
+
+    <div id="sp-page">
+        <div class="header">
+            <span></span>
+            <span>
+                <i class="fa fa-bars" ng-click="$spMenu.toggle()"></i>
+            </span>
+            <span id="title"><b>HOMEPAGE</b></span>
+            </div>
+    <div ui-view><!-- put your page content in here --></div>
+    </div>
+<!-- </div> -->

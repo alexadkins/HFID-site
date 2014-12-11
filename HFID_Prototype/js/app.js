@@ -1,5 +1,5 @@
 (function(){
-	var app= angular.module('Foodback', ['ui.router', 'ngDialog']);
+	var app= angular.module('Foodback', ['ui.router', 'ngDialog','shoppinpal.mobile-menu']);
 
 	app.config(function($stateProvider, $urlRouterProvider){
 		$urlRouterProvider.otherwise("/login");
