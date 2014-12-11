@@ -27,7 +27,7 @@
 			.state("restrictions",{
 				url:"/restrictions",
 				templateUrl: "pages/restrictions.html",
-				controller: 'restrictionsController'
+				controller: 'restrictionsFinalController'
 			})
 			.state("home",{
 				url:"/home",
@@ -85,7 +85,20 @@
 								{name: "Vegetarian", selected: false}
 								];
 
+	});
 
+	app.controller("restrictionsFinalController", function($scope,$rootScope){
+		if ($rootScope.restrictions) {
+			$scope.restrictions = $rootScope.restrictions
+		}
+		else {
+			$rootScope.restrictions = [
+								{name: "Vegan", selected: false},
+								{name: "Gluten Free", selected: false},
+								{name: "Vegetarian", selected: false}
+								];
+		}
+		
 	});
 
 	app.controller("sidebarController", function($scope,$rootScope){
