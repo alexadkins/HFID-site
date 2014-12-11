@@ -57,17 +57,29 @@
 		
 	});
 
-	app.controller("diningController",function($scope){
+	app.controller("diningController",function($scope,$rootScope){
+		$scope.chosenStatus = function(hallName, hallStatus) {
+			$rootScope.chosenDHs[hallName] = hallStatus
+			console.log($rootScope.chosenDHs)
+		}
+
 		$scope.diningHalls = ["Olin","Trim", "Reynolds"];
-
+		$rootScope.chosenDHs = []
 	});
 
-	app.controller("restrictionsController", function($scope){
+	app.controller("restrictionsController", function($scope,$rootScope){
+		$scope.chosenStatus = function(restName, restStatus) {
+			$rootScope.chosenRest[restName] = restStatus
+			console.log($rootScope.chosenRest)
+		}
+
 		$scope.restrictions = ["Vegan","Gluten Free", "Vegetarian"];
+		$rootScope.chosenRest = []
+
 
 	});
 
-	app.controller("sidebarController", function($scope){
+	app.controller("sidebarController", function($scope,$rootScope){
 		$scope.sidebarItems = ["Dietary Preferences","Olin Dining Hall", "About", "Help"];
 
 	});
