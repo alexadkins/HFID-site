@@ -1,11 +1,11 @@
 <div class="mainContent">
 	<p>Mark all of your dietary restrictions and preferences. This will allow us to personalize the meals you see within the app, and highlight meals you can eat in the app.</p>
 	<ul>
-		<li ng-class="{selected: select, unselected: !select}" ng-repeat="restrict in restrictions" ng-click="select = !select" ng-init="select=false">
+		<li ng-class="{selected: select, unselected: !select}" ng-repeat="restrict in restrictions" ng-click="select = !select; chosenStatus(restrict, select)" ng-init="select=false">
 			<span ng-switch="select">
 				<span ng-switch-when="false" class='fa fa-circle-thin'></span>
 				<span ng-switch-when="true" class='fa fa-check-circle-o'></span>
-			</span>{{restrict}}
+			</span>{{restrict.name}}
 		</li>
 	</ul>
 	<div class="nextButton"><a ui-sref="home" class='fa fa-arrow-circle-right fa-3x'></a></div>
