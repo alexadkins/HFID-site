@@ -52,6 +52,10 @@
 				url:"/aboutUs",
 				templateUrl:"pages/sidebar.aboutUs.html"
 			}).
+			state("sidebar.aboutUs",{
+				url:"/aboutUs",
+				templateUrl:"pages/sidebar.aboutUs.html"
+			}).
 			state("home.splash",{
 				url:"/splash",
 				templateUrl:"pages/home.splash.html"
