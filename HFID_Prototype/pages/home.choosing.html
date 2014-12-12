@@ -21,7 +21,7 @@
 		</div>	
 
 		<div class="wrapper"> 
-			<div class="mealSidebar">Lunch</div>
+			<div class="mealSidebar">Dinner</div>
 			<div class="optionSidebar" ng-repeat-start="mealNumber in day.dinner"></div>
 			<ul class="mealChoices" ng-repeat-end>
 				<li class="meal" ng-repeat="option in mealNumber.names" ng-click="selectChoice(day,'dinner',mealNumber,option)" ng-show="!mealNumber.results">

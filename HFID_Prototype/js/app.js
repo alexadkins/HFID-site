@@ -99,7 +99,7 @@
 
 	app.controller("restrictionsFinalController", function($scope,$rootScope){
 		if ($rootScope.restrictions) {
-			$scope.restrictions = $rootScope.restrictions
+			$scope.restrictions = $rootScope.restrictions;
 		}
 		else {
 			$rootScope.restrictions = [
@@ -114,7 +114,7 @@
 
 	app.controller("diningFinalController", function($scope,$rootScope){
 		if ($rootScope.diningHalls) {
-			$scope.diningHalls = $rootScope.diningHalls
+			$scope.diningHalls = $rootScope.diningHalls;
 		}
 		else {
 			$rootScope.diningHalls = [
@@ -343,7 +343,23 @@
 
 		$scope.mealData = [{date : "Wednesday", 
 							'lunch' : [{names:['Macaroni and Cheese','Spaghetti and Marinara','Fettucine Alfredo', 'Ravioli Bar'], chosen: 4, results: false},{names:['Cheese Pizza',"Florentine Pizza", "Meatlovers Pizza", "Macaroni Pizza"], chosen: 4, results:false}],
-							'dinner': [{names:['Herb Grilled Chicken','Kung Pao Chicken','Peruvian Lime Chicken','Chicken Breast Saltimbocca'], chosen: 4, results: false}, {names:['Herb Grilled Chicken','Kung Pao Chicken','Peruvian Lime Chicken','Chicken Breast Saltimbocca'], chosen:4, results:false}]
+							'dinner': [{names:['Herb Grilled Chicken','Kung Pao Chicken','Peruvian Lime Chicken','Chicken Breast Saltimbocca'], chosen: 4, results: false}, {names:['Grilled Cheese','Turkey Sandwich','Tuna Salad Sandwich','Caprese Sandwich'], chosen:4, results:false}]
+							},
+							{date : "Thursday", 
+							'lunch' : [{names:['Macaroni and Cheese','Spaghetti and Marinara','Fettucine Alfredo', 'Ravioli Bar'], chosen: 4, results: false},{names:['Cheese Pizza',"Florentine Pizza", "Meatlovers Pizza", "Macaroni Pizza"], chosen: 4, results:false}],
+							'dinner': [{names:['Herb Grilled Chicken','Kung Pao Chicken','Peruvian Lime Chicken','Chicken Breast Saltimbocca'], chosen: 4, results: false}, {names:['Grilled Cheese','Turkey Sandwich','Tuna Salad Sandwich','Caprese Sandwich'], chosen:4, results:false}]
+							},
+							{date : "Friday", 
+							'lunch' : [{names:['Macaroni and Cheese','Spaghetti and Marinara','Fettucine Alfredo', 'Ravioli Bar'], chosen: 4, results: false},{names:['Cheese Pizza',"Florentine Pizza", "Meatlovers Pizza", "Macaroni Pizza"], chosen: 4, results:false}],
+							'dinner': [{names:['Herb Grilled Chicken','Kung Pao Chicken','Peruvian Lime Chicken','Chicken Breast Saltimbocca'], chosen: 4, results: false}, {names:['Grilled Cheese','Turkey Sandwich','Tuna Salad Sandwich','Caprese Sandwich'], chosen:4, results:false}]
+							},
+							{date : "Saturday", 
+							'lunch' : [{names:['Macaroni and Cheese','Spaghetti and Marinara','Fettucine Alfredo', 'Ravioli Bar'], chosen: 4, results: false},{names:['Cheese Pizza',"Florentine Pizza", "Meatlovers Pizza", "Macaroni Pizza"], chosen: 4, results:false}],
+							'dinner': [{names:['Herb Grilled Chicken','Kung Pao Chicken','Peruvian Lime Chicken','Chicken Breast Saltimbocca'], chosen: 4, results: false}, {names:['Grilled Cheese','Turkey Sandwich','Tuna Salad Sandwich','Caprese Sandwich'], chosen:4, results:false}]
+							},
+							{date : "Sunday", 
+							'lunch' : [{names:['Macaroni and Cheese','Spaghetti and Marinara','Fettucine Alfredo', 'Ravioli Bar'], chosen: 4, results: false},{names:['Cheese Pizza',"Florentine Pizza", "Meatlovers Pizza", "Macaroni Pizza"], chosen: 4, results:false}],
+							'dinner': [{names:['Herb Grilled Chicken','Kung Pao Chicken','Peruvian Lime Chicken','Chicken Breast Saltimbocca'], chosen: 4, results: false}, {names:['Grilled Cheese','Turkey Sandwich','Tuna Salad Sandwich','Caprese Sandwich'], chosen:4, results:false}]
 							}];
 
 		$scope.callResult = function(){
