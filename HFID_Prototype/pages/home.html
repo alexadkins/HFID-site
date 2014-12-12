@@ -17,9 +17,9 @@
             <span id="title" class="home-title"><b>HOMEPAGE</b></span>
         </div>
         <div class="navbar" ng-controller="navbarController">
-            <div id="nav-text" ng-click="changeSelected(0)" ng-class="{active : selectionNum==0}">Choosing</div>
-            <div id="nav-text" ng-click="changeSelected(1)" ng-class="{active : selectionNum==1}">Feedback</div>
-            <div id="nav-menu" ng-click="changeSelected(2)" ng-class="{active : selectionNum==2}">Menu</div>
+            <div id="nav-text" ng-click="changeSelected(0)" ng-class="{active : selectionNum==0}" ui-sref="home.choosing">Choosing</div>
+            <div id="nav-text" ng-click="changeSelected(1)" ng-class="{active : selectionNum==1}" ui-sref="home.feedback">Feedback</div>
+            <div id="nav-menu" ng-click="changeSelected(2)" ng-class="{active : selectionNum==2}" ui-sref="home.menu">Menu</div>
         </div>
         <div ui-view></div>
         <div ng-show="overlayOn()" id="overlay" class="check-element overlay-show-hide" style="clear:both;"></div>
