@@ -289,16 +289,22 @@ button:focus {
   height: 39px;
   width: 100%;
 }
-#choosing .mealChoices .results p {
+#choosing .mealChoices .results .box {
+  height: 39px;
+  background-color: #449bb5;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+#choosing .mealChoices .results .text {
   display: inline-block;
   margin: 0;
+  height: 39px;
+  vertical-align: top;
   line-height: 39px;
-  height: 100%;
-  font-size: 18px;
+  font-size: 14px;
+  overflow: hidden;
   font-weight: 300;
-}
-#choosing .mealChoices .results span {
-  margin-left: 10px;
 }
 #choosing .optionSidebar {
   float: left;

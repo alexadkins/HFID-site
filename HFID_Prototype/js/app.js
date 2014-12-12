@@ -291,6 +291,15 @@
 	});
 
 	app.controller("choosingController", function($scope){
+
+		$scope.getPercentages = function(){
+			var num1 = Math.floor(Math.random()*100);
+			var num2 = Math.floor(Math.random()*(100-num1));
+			var num3 = Math.floor(Math.random()*(100-num1-num2));
+			var num4 = 100-num1-num2-num3;
+			return [num1,num2,num3,num4];
+		}
+
 		$scope.mealData = [{date : "Wednesday", 
 							'lunch' : [{names:['Macaroni and Cheese','Spaghetti and Marinara','Fettucine Alfredo', 'Ravioli Bar'], chosen: 4, results: false},{names:['Cheese Pizza',"Florentine Pizza", "Meatlovers Pizza", "Macaroni Pizza"], chosen: 4, results:false}],
 							'dinner': [{names:['Herb Grilled Chicken','Kung Pao Chicken','Peruvian Lime Chicken','Chicken Breast Saltimbocca'], chosen: 4, results: false}, {names:['Herb Grilled Chicken','Kung Pao Chicken','Peruvian Lime Chicken','Chicken Breast Saltimbocca'], chosen:4, results:false}]
@@ -336,7 +345,12 @@
 			else{
 				return true;
 			}
-		}				
+		}	
+
+	
+		$scope.indexFinder = function(mealing,opt){
+			return mealing.names.indexOf(opt);
+		}			
 							
 	});
 
