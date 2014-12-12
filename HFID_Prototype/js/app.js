@@ -127,6 +127,20 @@
 
 	app.controller("sidebarController", function($scope,$rootScope){
 		$scope.sidebarItems = [{name: "Dietary Preferences", link: "home.restrictions"},{name:"Add Dining Halls", link: "home.diningHalls"} , {name:"About", link:"home.aboutUs"}, {name:"Help", link:"home.help"}];
+		$scope.overlayOn = false;
+
+		$rootScope.overlayToggle = function() {
+			$scope.overlayOn = !$scope.overlayOn
+		}
+
+		$rootScope.overlayOn = function() {
+			if ($scope.overlayOn == true){
+				return true;
+			}
+			else {
+				return false;
+			}
+		}
 
 	});
 

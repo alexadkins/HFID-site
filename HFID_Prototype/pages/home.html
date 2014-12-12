@@ -4,16 +4,15 @@
             <div id="sidebar-header" class="header">
                 <div id="title" class="sidebar-title"><b>FOODBACK</b></div>
             </div>
-            <li ng-repeat="item in sidebarItems" class="sidebarBar" ng-click="$spMenu.toggle(); overlayOn = !overlayOn" ui-sref="{{item.link}}">{{item.name}}</li>
+            <li ng-repeat="item in sidebarItems" class="sidebarBar" ng-click="$spMenu.toggle(); overlayToggle()" ui-sref="{{item.link}}">{{item.name}}</li>
         </div>
     </div>
 
     <div id="sp-page">
-        <div ng-init="overlayOn=false"></div>
         <div class="header">
             <span></span>
             <span>
-                <i class="fa fa-bars fa-lg" ng-click="$spMenu.toggle(); overlayOn = !overlayOn"></i>
+                <i class="fa fa-bars fa-lg" ng-click="overlayToggle(); $spMenu.toggle()"></i>
             </span>
             <span id="title" class="home-title"><b>HOMEPAGE</b></span>
         </div>
@@ -23,6 +22,6 @@
             <div id="nav-menu" ng-click="changeSelected(2)" ng-class="{active : selectionNum==2}">Menu</div>
         </div>
         <div ui-view></div>
-        <div ng-show="overlayOn" id="overlay" class="check-element overlay-show-hide" style="clear:both;"></div>
+        <div ng-show="overlayOn()" id="overlay" class="check-element overlay-show-hide" style="clear:both;"></div>
     </div>
 <!-- </div> -->
