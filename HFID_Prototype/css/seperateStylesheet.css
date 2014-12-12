@@ -1,25 +1,60 @@
+
 .mainContent1 p {
   font-weight: 300;
-  font-size: 14px;
+  font-size: 16px;
   padding: 0 10px;
   margin-top: 4px;
 }
-
-.subTitle{
+.subTitleFeedback{
 	background-color: #449BB5;
 	font-size: 18px;
+	color: white;
 	text-align: center;
 	color: white;
 	margin-top: 6px;
 	padding: auto;
 	height: 40px;
     line-height:2.2em;
+}
+.modalW{
+	text-align: center;
+}
+.subTitle{
+<<<<<<< HEAD
+	background-color: #449BB5;
+=======
+	background-color: #449bb5;
+>>>>>>> e6c4c0d1c12b3bc2af1b100f72bb37255b97a710
+	font-size: 18px;
+	color: white;
+	text-align: center;
+<<<<<<< HEAD
+	color: white;
+	margin-top: 6px;
+=======
+	margin-top: 3px;
+>>>>>>> e6c4c0d1c12b3bc2af1b100f72bb37255b97a710
+	padding: auto;
+	height: 40px;
+    line-height:2.2em;
 
 }
-.centerMargin{
+.submitButton{
 	text-align: center;
-	margin-left: 5px;
-	margin-right: 5px;
+	color: #449bb5;
+	margin-left: 125px;
+}
+.titleModalWindow{
+	color:#449BB5;
+	text-align: center; 
+	font-size: 22px;
+}
+.centermarginTextArea{
+	text-align: center;
+	margin-left: 2px;
+}
+.centermarginTextBox{
+	text-align: center;
 }
 .textBoxText{
 	color: #BDBDBD;
@@ -30,6 +65,7 @@
   text-align: center;
   color: #449BB5;
 }
+<<<<<<< HEAD
 
 
 .modalDialog {
@@ -47,24 +83,89 @@
 	transition: opacity 400ms ease-in;
 	pointer-events: none;
 }
+=======
+>>>>>>> e6c4c0d1c12b3bc2af1b100f72bb37255b97a710
 
-.modalDialog:target {
-	opacity:1;
-	pointer-events: auto;
-}
 .center1{
 	text-align: center;
 }
-.modalDialog > div {
-	width: 400px;
-	position: relative;
-	margin: 10% auto;
-	padding: 5px 20px 13px 20px;
-	border-radius: 10px;
-	background: #fff;
-	background: -moz-linear-gradient(#fff, #999);
-	background: -webkit-linear-gradient(#fff, #999);
-	background: -o-linear-gradient(#fff, #999);
+
+/*Three bars button*/
+.fa.fa-bars{
+    font-size: 20px;
+    width: 10%;
+    color: white;
 }
 
+/*"Homepage" title*/
+#title.home-title{
+    width: 78%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 auto;
+}
 
+/*Sidebar title*/
+#title.sidebar-title{
+    width: 100%;
+}
+
+/*Page background color*/
+#sp-page {
+	background: white;
+}
+
+/*Sidebar size*/
+#sp-nav, #sp-nav.wide {
+	width: 75%;
+}
+
+#sp-nav.show+#sp-page, #sp-nav.show.wide+#sp-page {
+	transform: translateX(75%);
+}
+
+/*Sidebar*/
+.sidebar {
+	height: 100%;
+	background: #449bb5;
+}
+
+#sidebar-header {
+	background-color: #285c6b;
+	border-bottom: 3px solid white;
+}
+
+.sidebarBar {
+  width: 100%;
+  border-bottom: 3px solid #285c6b;
+  text-align: left;
+  padding-left: 5px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: white;
+
+  list-style-type: none;
+}
+
+#overlay {
+	width: 30%;
+	height: 100%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	pointer-events: none;
+	background-color: black;
+	opacity: 0.7;
+}
+
+.overlay-show-hide {
+  -webkit-transition:all linear 0.5s;
+  transition:all linear 0.5s;
+}
+
+.overlay-show-hide.ng-hide {
+  opacity:0;
+}

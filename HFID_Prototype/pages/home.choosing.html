@@ -1,1 +1,39 @@
-<p>Choosing</p>
+<div class="submitButton" ng-click="callResult()">Submit Your Votes</div>	
+<div class="choosingWrapper">
+	<div id="choosing" ng-repeat="day in mealData">
+		<div class="dayBar">
+			Options on {{day.date}}
+		</div>	
+
+		<div class="wrapper"> 
+			<div class="mealSidebar">Lunch</div>
+			<div class="optionSidebar" ng-repeat-start="mealNumber in day.lunch"></div>
+			<ul class="mealChoices" ng-repeat-end>
+				<li class="meal" ng-repeat="option in mealNumber.names" ng-click="selectChoice(day,'lunch',mealNumber,option)" ng-show="!mealNumber.results">
+					<span ng-class="{'fa fa-square-o': checkIfSelected(day, 'lunch', mealNumber, option), 'fa fa-check-square-o' : !checkIfSelected(day, 'lunch', mealNumber, option)}"></span>
+					<p>{{option}}</p>
+				</li> 
+				<li ng-repeat="option in mealNumber.names" ng-show="mealNumber.results" ng-click="indexFinder(mealNumber,option)" class="results" ng-init="percent = getPercentages()">
+					<p class="box" ng-style="{'width': percent[indexFinder(mealNumber,option)]/2 + '%'}"></p>
+					<p class="text">{{percent[indexFinder(mealNumber,option)] + '%   ' + option}}</p>
+				</li>
+			</ul>
+		</div>	
+
+		<div class="wrapper"> 
+			<div class="mealSidebar">Lunch</div>
+			<div class="optionSidebar" ng-repeat-start="mealNumber in day.dinner"></div>
+			<ul class="mealChoices" ng-repeat-end>
+				<li class="meal" ng-repeat="option in mealNumber.names" ng-click="selectChoice(day,'dinner',mealNumber,option)" ng-show="!mealNumber.results">
+					<span ng-class="{'fa fa-square-o': checkIfSelected(day, 'dinner', mealNumber, option), 'fa fa-check-square-o' : !checkIfSelected(day, 'dinner', mealNumber, option)}"></span>
+					<p>{{option}}</p>
+				</li> 
+				<li ng-repeat="option in mealNumber.names" ng-show="mealNumber.results" ng-click="indexFinder(mealNumber,option)" class="results" ng-init="percent = getPercentages()">
+					<p class="box" ng-style="{'width': percent[indexFinder(mealNumber,option)]/2 + '%'}"></p>
+					<p class="text">{{percent[indexFinder(mealNumber,option)] + '%   ' + option}}</p>
+				</li>
+			</ul>
+		</div>
+</div>
+
+

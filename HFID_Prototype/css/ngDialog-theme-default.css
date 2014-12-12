@@ -63,6 +63,7 @@
   padding-top: 160px;
 }
 
+<<<<<<< HEAD
 .titleModalWindow{
   text-transform: uppercase;
   font-family: 'Helvetica',sans-serif;
@@ -73,6 +74,8 @@
 
 }
 
+=======
+>>>>>>> e6c4c0d1c12b3bc2af1b100f72bb37255b97a710
 .ngdialog.ngdialog-theme-default.ngdialog-closing .ngdialog-content {
   -webkit-animation: ngdialog-flyout .5s;
   animation: ngdialog-flyout .5s;
@@ -85,6 +88,7 @@
   border-radius: 5px;
   color: #444;
   font-family: 'Helvetica',sans-serif;
+<<<<<<< HEAD
   text-align: center;
   font-size: 1.1em;
   line-height: 1.5em;
@@ -95,6 +99,7 @@
   position: relative;
   right: 10px;
   width: 280px;
+
 }
 
 .ngdialog.ngdialog-theme-default .ngdialog-close {
