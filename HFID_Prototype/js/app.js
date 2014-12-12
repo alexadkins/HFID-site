@@ -108,7 +108,21 @@
 								{name: "Vegetarian", selected: false}
 								];
 		}
+		$rootScope.restrictions = $scope.restrictions;
 		
+	});
+
+	app.controller("diningFinalController", function($scope,$rootScope){
+		if ($rootScope.diningHalls) {
+			$scope.diningHalls = $rootScope.diningHalls
+		}
+		else {
+			$rootScope.diningHalls = [
+								{name: "Vegan", selected: false},
+								{name: "Gluten Free", selected: false},
+								{name: "Vegetarian", selected: false}
+								];
+		}
 	});
 
 	app.controller("sidebarController", function($scope,$rootScope){
