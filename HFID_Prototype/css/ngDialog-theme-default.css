@@ -63,6 +63,19 @@
   padding-top: 160px;
 }
 
+<<<<<<< HEAD
+.titleModalWindow{
+  text-transform: uppercase;
+  font-family: 'Helvetica',sans-serif;
+  text-align: center;
+  font-size: 1.3em;
+  font-family: 'Helvetica',sans-serif;
+  color: #449BB5;
+
+}
+
+=======
+>>>>>>> e6c4c0d1c12b3bc2af1b100f72bb37255b97a710
 .ngdialog.ngdialog-theme-default.ngdialog-closing .ngdialog-content {
   -webkit-animation: ngdialog-flyout .5s;
   animation: ngdialog-flyout .5s;
@@ -75,13 +88,18 @@
   border-radius: 5px;
   color: #444;
   font-family: 'Helvetica',sans-serif;
+<<<<<<< HEAD
+  text-align: center;
   font-size: 1.1em;
   line-height: 1.5em;
   margin: 0 auto;
+  margin-top: 100px;
   max-width: 100%;
   padding: 1em;
   position: relative;
-  width: 450px;
+  right: 10px;
+  width: 280px;
+
 }
 
 .ngdialog.ngdialog-theme-default .ngdialog-close {
