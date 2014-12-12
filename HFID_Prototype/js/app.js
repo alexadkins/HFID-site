@@ -144,8 +144,8 @@
 
 	});
 
-	app.controller("navbarController", function($scope){
-		$scope.changeSelected = function(choice){
+	app.controller("navbarController", function($scope, $rootScope){
+		$rootScope.changeSelected = function(choice){
 			$scope.selectionNum = choice;
 		}
 	});
