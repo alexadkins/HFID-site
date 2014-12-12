@@ -303,7 +303,7 @@ button:focus {
   vertical-align: top;
   line-height: 39px;
   font-size: 14px;
-  overflow: hidden;
+  text-overflow: ellipsis;
   font-weight: 300;
 }
 #choosing .optionSidebar {
@@ -311,7 +311,7 @@ button:focus {
   width: 5.5%;
   height: 160px;
 }
-.submitButton {
+.choosingSubmitButton {
   background-color: #eb7557;
   text-align: center;
   line-height: 39px;

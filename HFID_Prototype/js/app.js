@@ -24,52 +24,44 @@
 				templateUrl: "pages/setup.restrictions.html",
 				controller: 'restrictionsController'
 			})
+			.state("home",{
+				url:"/home",
+				templateUrl: "pages/home.html"
+			})
 			.state("home.restrictions",{
 				url:"/restrictions",
 				templateUrl: "pages/home.restrictions.html",
 				controller: 'restrictionsFinalController'
-			}).
+			})
 			.state("home.diningHalls",{
 				url:"/diningHalls",
 				templateUrl: "pages/home.diningHalls.html",
 				controller: 'diningFinalController'
-			}).
-			.state("home",{
-				url:"/home",
-				templateUrl: "pages/home.html"
 			})
 			.state("home.choosing",{
 				url:"/choosing",
 				templateUrl: "pages/home.choosing.html",
 				controller: "choosingController"
-			}).
-			state("home.menu",{
+			})
+			.state("home.menu",{
 				url:"/menu",
 				templateUrl:"pages/home.menu.html",
 				controller: 'menuCont'
-			}).
-			state("home.feedback",{
+			})
+			.state("home.feedback",{
 				url:"/feedback",
 				templateUrl:"pages/home.feedback.html",
 				controller: 'modalController'
-			}).
-			state("sidebar.aboutUs",{
+			})
+			.state("home.aboutUs",{
 				url:"/aboutUs",
-				templateUrl:"pages/sidebar.aboutUs.html"
-			}).
-			state("sidebar.aboutUs",{
-				url:"/aboutUs",
-				templateUrl:"pages/sidebar.aboutUs.html"
-			}).
-			state("home.splash",{
+				templateUrl:"pages/home.aboutUs.html"
+			})
+			.state("home.splash",{
 				url:"/splash",
 				templateUrl:"pages/home.splash.html"
-			}).
-			state("home.about",{
-				url:"/about",
-				templateUrl:"pages/home.about.html"
-			}).
-			state("home.help",{
+			})
+			.state("home.help",{
 				url:"/help",
 				templateUrl:"pages/home.help.html"
 			});
@@ -120,7 +112,7 @@
 	});
 
 	app.controller("sidebarController", function($scope,$rootScope){
-		$scope.sidebarItems = [{name: "Dietary Preferences", link: "home.restriction"},{name:"Add Dining Halls", link: "home.diningHalls" , {name:"About", link:"home.about"}, {link:"Help", link:"home.help"}];
+		$scope.sidebarItems = [{name: "Dietary Preferences", link: "home.restrictions"},{name:"Add Dining Halls", link: "home.diningHalls"} , {name:"About", link:"home.aboutUs"}, {name:"Help", link:"home.help"}];
 
 	});
 
