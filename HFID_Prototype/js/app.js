@@ -24,11 +24,16 @@
 				templateUrl: "pages/setup.restrictions.html",
 				controller: 'restrictionsController'
 			})
-			.state("restrictions",{
+			.state("home.restrictions",{
 				url:"/restrictions",
-				templateUrl: "pages/restrictions.html",
+				templateUrl: "pages/home.restrictions.html",
 				controller: 'restrictionsFinalController'
-			})
+			}).
+			.state("home.diningHalls",{
+				url:"/diningHalls",
+				templateUrl: "pages/home.diningHalls.html",
+				controller: 'diningFinalController'
+			}).
 			.state("home",{
 				url:"/home",
 				templateUrl: "pages/home.html"
@@ -52,9 +57,13 @@
 				url:"/splash",
 				templateUrl:"pages/home.splash.html"
 			}).
-			state("about",{
+			state("home.about",{
 				url:"/about",
-				templateUrl:"pages/about.html"
+				templateUrl:"pages/home.about.html"
+			}).
+			state("home.help",{
+				url:"/help",
+				templateUrl:"pages/home.help.html"
 			});
 	});
 
@@ -103,7 +112,7 @@
 	});
 
 	app.controller("sidebarController", function($scope,$rootScope){
-		$scope.sidebarItems = ["Dietary Preferences","Olin Dining Hall", "About", "Help"];
+		$scope.sidebarItems = [{name: "Dietary Preferences", link: "home.restriction"},{name:"Add Dining Halls", link: "home.diningHalls" , {name:"About", link:"home.about"}, {link:"Help", link:"home.help"}];
 
 	});
 
@@ -286,8 +295,6 @@
 				$scope.selectedMeal = 'dinner'
 			}
 		}
-
-
 	});
 
 	app.controller("choosingController", function($scope){

@@ -4,7 +4,7 @@
             <div id="sidebar-header" class="header">
                 <div id="title" class="sidebar-title"><b>FOODBACK</b></div>
             </div>
-            <li ng-repeat="item in sidebarItems" class="sidebarBar">{{item}}</li>
+            <li ng-repeat="item in sidebarItems" class="sidebarBar" ui-sref="item.link">{{item.name}}</li>
         </div>
     </div>
 
