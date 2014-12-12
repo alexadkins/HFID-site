@@ -5,6 +5,19 @@
   padding: 0 10px;
   margin-top: 4px;
 }
+
+.mainContent2{
+	font-size: 14px;
+	text-decoration: none;
+	font-weight: 200;
+	text-align: justify;
+	margin-right: 3px;
+	margin-left: 3px;
+}
+
+.namesCenter{
+	text-align: center;
+}
 .subTitleFeedback{
 	background-color: #449BB5;
 	font-size: 18px;
