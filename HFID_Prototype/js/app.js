@@ -130,6 +130,12 @@
 
 	});
 
+	app.controller("navbarController", function($scope){
+		$scope.changeSelected = function(choice){
+			$scope.selectionNum = choice;
+		}
+	});
+
 	app.controller("menuCont", function($scope){
 		$scope.currentDay = 0;
 		$scope.mealNumber = 0;
