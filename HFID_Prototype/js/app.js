@@ -108,12 +108,46 @@
 								{name: "Vegetarian", selected: false}
 								];
 		}
+		$rootScope.restrictions = $scope.restrictions;
 		
+	});
+
+	app.controller("diningFinalController", function($scope,$rootScope){
+		if ($rootScope.diningHalls) {
+			$scope.diningHalls = $rootScope.diningHalls
+		}
+		else {
+			$rootScope.diningHalls = [
+								{name: "Vegan", selected: false},
+								{name: "Gluten Free", selected: false},
+								{name: "Vegetarian", selected: false}
+								];
+		}
 	});
 
 	app.controller("sidebarController", function($scope,$rootScope){
 		$scope.sidebarItems = [{name: "Dietary Preferences", link: "home.restrictions"},{name:"Add Dining Halls", link: "home.diningHalls"} , {name:"About", link:"home.aboutUs"}, {name:"Help", link:"home.help"}];
+		$scope.overlayOn = false;
 
+		$rootScope.overlayToggle = function() {
+			$scope.overlayOn = !$scope.overlayOn
+		}
+
+		$rootScope.overlayOn = function() {
+			if ($scope.overlayOn == true){
+				return true;
+			}
+			else {
+				return false;
+			}
+		}
+
+	});
+
+	app.controller("navbarController", function($scope, $rootScope){
+		$rootScope.changeSelected = function(choice){
+			$scope.selectionNum = choice;
+		}
 	});
 
 	app.controller("menuCont", function($scope){
