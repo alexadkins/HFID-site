@@ -118,9 +118,9 @@
 		}
 		else {
 			$rootScope.diningHalls = [
-								{name: "Vegan", selected: false},
-								{name: "Gluten Free", selected: false},
-								{name: "Vegetarian", selected: false}
+								{name: "Olin", selected: false},
+								{name: "Trim", selected: false},
+								{name: "Reynolds", selected: false}
 								];
 		}
 	});
