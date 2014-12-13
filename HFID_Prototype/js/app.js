@@ -338,6 +338,8 @@
 			var num2 = Math.floor(Math.random()*(100-num1));
 			var num3 = Math.floor(Math.random()*(100-num1-num2));
 			var num4 = 100-num1-num2-num3;
+			console.log(num1+num2+num3+num4);
+			console.log([num1,num2,num3,num4]);
 			return [num1,num2,num3,num4];
 		}
 
