@@ -1,3 +1,4 @@
+<div ng-init="changeSelected(2)"></div>
 <div id="dayBar"><span ng-class="{'fa fa-angle-left fa-lg': !noMorePast}" ng-click="changeDay(1)"></span>{{menuItems[currentDay].date}}<span ng-class="{'fa fa-angle-right fa-lg': !noMoreFuture}" ng-click="changeDay(0)"></span></div>
 <div id="mealBar">
 	<div class="selections" ng-click="changeMeal(0)"><span ng-class="{active : mealNumber==0}">Breakfast</span></div> 
