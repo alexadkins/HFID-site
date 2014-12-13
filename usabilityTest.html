@@ -63,6 +63,10 @@
               <a href="#">USABILITY TEST</a>
             </li>
 
+            <li>
+              <a href="finalRefinement.html">FINAL REFINEMENT</a>
+            </li>
+
           </ul>
         </div>
 
@@ -89,8 +93,10 @@
 				<h2>HYPOTHESIS</h2>
 				<p>In the current design of the app, the welcome/explanation frame (left) appears before the main content of the app (right). We hypothesize that having this introduction screen will improve the users&#39; understanding of how the choosing feature works as well as our users&#39; understanding of the app entirely.</p>
 				
+
+
 				<br>
-				<img style="width:100%" src="assets/img/images/usabilityTest-1stscreen-vs-noscreen.jpg" alt="Descriptive Screen and Main Page">
+				<img style="width:50%; margin:0 auto;" src="assets/img/images/usabilityTest-1stscreen-vs-noscreen.jpg" alt="Descriptive Screen and Main Page">
 				<br>
 				
 				<h2>Independent Variables</h2>
@@ -110,6 +116,66 @@
 				<p>We would also test the user&#39;s understanding of the swiping gesture. We chose to swipe the screen to go to the next meal menu but we don&#39;t know yet how the user might react. To test this reaction, we would start with just an arrow that would get the user to the next meal. We would then implement the swiping gesture and integrate a small tutorial to explain the user how it works for the first time. Depending on the behavior of the user (hesitating or confident) we would adapt our solution to our results. If our test users are confident about it, we would consider dropping the tutorial.</p>
       </div>
 		</div><!-- row -->
+
+    <div class="row">
+      <div class="col-lg-12">
+        <br><br>
+        <h2>RESULTS</h2>
+        We conducted our usability study with 5 students at Babson, who all are on a meal plan, and regularly use dining halls. 
+        <h3>Overview</h3>
+        Based on the Usability test, we found that our hypothesis was confirmed qualitatively. Quantitatively, we found that the variable we chose to test didn't give us meaningful results. We found from these five tests that having a splash screen initially, which explains the various features of the app does improve understanding of the app. Based on the quantitative results we got, our test did not validate our hypothesis. We did not see any measured improvement of speed to completion with either test case. However, we made the decision to also ask some exit questions to gauge understanding after the test was completed. From these questions, we found that the test subjects were much more confused at how the app worked if they didn't go through the splash screen initially, and we thrown into the app. 
+        <h3>Report of Response Variables</h3>
+         <table class="table">
+          <tr>
+            <th style="width:25%">Tester</th>
+            <th style="width:10%">Time</th>
+            <th style="width:30%">Observation Notes</th>
+            <th style="width:30%">Comments</th>
+          </tr>
+          <tr>
+            <td>Splash Screen Tester 1</td>
+            <td>2m 22s</td>
+            <td>User selected menu quite quickly after looking at the splash page. He looked through the different menu items across the 3 meals on different days and verbally said, 'I would like to vote for dish x and dish y'. After a little clarification, he got to the choosing screen, a little confused by how it starts on Wednesday rather than Monday.</td>
+            <td>After asking him why he chose to select menu first, he said that he wanted to check the menu to see what dishes are available before voting.</td>
+          </tr>
+          <tr>
+            <td>Splash Screen Tester 2</td>
+            <td>2m 21s</td>
+            <td>User selected choosing quite quickly after looking at the splash page. He scrolled a little bit and started voting for all of the dishes that he could, which added to the time. After he reached the bottom, he paused because he was confused and then scrolled all the way back up to hit submit votes.</td>
+            <td>POWER USER!</td>
+          </tr>
+          <tr>
+            <td>Splash Screen Tester 3</td>
+            <td>1m 24s</td>
+            <td>User selected choosing quite quickly after looking at the splash page. He started voting and found out that he can only vote for one and not as many as he wanted in a section. After selecting multiple dishes to vote for and reaching the bottom of the page, he paused and was confused.</td>
+            <td>He thought that he had to select a dish for every section for the entire form before submitting his votes. He also thought that he could only vote once for an entire lunch or dinner section and the different colors were just for aesthetic looks.</td>
+           
+          </tr>
+          <tr>
+            <td>No Splash Screen Tester 1</td>
+            <td>2m 37s</td>
+            <td>Started on the menu feature area. Went to entrees first. Then to dinner's entrees because he didn't care about breakfast. He verbally said the dishes that were on the menu that he wanted to vote for and got stuck afterwards. He was only able to complete the objective after I hinted to him that he should press choosing. Afterwards, he was able to complete the task of voting for 2 dishes quite quickly.</td>
+            <td>Failed to complete the test on his own. Splash page seems necessary.</td>
+        
+          </tr>
+          <tr>
+            <td>No Splash Screen Tester 2</td>
+            <td>2m 41s</td>
+            <td>Started on the feedback screen. After about 5 seconds, he was able navigate to the choosing tab and vote for a few dishes. At first, he unselected his original vote before voting for another option within the same dish section. However, he was pausing when his vote switched after selecting another choice within the same section.</td>
+            <td>He thought he had to vote for 2 dishes per meal when he was asked to vote for 2 dishes.</td>
+
+          </tr>
+        </table>
+
+
+        <h3>Analysis</h3>
+        <p>From our quantitative data, we weren't able to gather much. The main issue with the variable we chose to test was that it could vary based on numerous factors, only one of which is understanding. Some users spent more time on choosing meals, while others only voted on one dish. Each user also had their own ways to getting to the choosing screen. This led to almost all the times measured to be quite similar, and not very meaningful. If we were to repeat this usablity study, we would change the measured data to be a survey of sorts at the end of the test, which could better measure understanding, and amount of confusion. That being said, the observations from each of the tests were extremely useful in testing our hypothesis. From our observations, we see that people have a better understanding of the app when they were presented with a splash screen before getting into the meat of the app. The most telling example of this is in "No Splash Screen Tester 1", who couldn't complete the test at all without help. If we were to conduct this test with a more statistically relavant number of people, we think that we would see similar results. It seems that the splash screen is very necessary for the users to initially have a good understanding of the app. </p> 
+
+        <h3>Going Forward</h3>
+        <p>Going forward, we will be adding a splash screen to our app. Based on the this test, we have seen that qualitatively, we can drastically reduce confusion surrounding the app with a simple splash screen. While our quantitative results don't tell us much, we believe that with a few tweaks to the design of the test, we will definately get quantitative results that match what we observe.</p>
+      </div>
+    </div><!-- row -->
+
 	</div><!-- container -->
 
 	
