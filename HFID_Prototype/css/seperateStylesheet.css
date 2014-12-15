@@ -112,6 +112,7 @@
 #nav-text.active {
 	background-color: #E86240;
 	color: #285c6b;
+	font-weight: bold;
 }
 
 #nav-menu {
