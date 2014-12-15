@@ -385,6 +385,58 @@ button:focus {
 
 }
 
+.splashButton{
+	font-size: 12px;
+	text-decoration: none;
+	display:block;
+	width:75%;
+	margin:0 auto;
+	margin-top:20px;
+	padding:4px;
+	background:@mainBlue;
+	color:white;
+	.rounded-corners;
+	border-bottom:3px solid @trim;
+	border-right:3px solid @trim;
+	&:active{
+		border-bottom: 0px solid black;
+		border-right: 0px solid black;
+		.transition(0.1s);
+	}
+
+	h1{
+		font-size: 20px;
+		width:100%;
+		margin:0 auto;
+		font-weight:500;
+		text-transform: uppercase;
+	}
+	p{
+		width:100%;
+		margin:0 auto;
+		text-align: center;
+		margin:5px 2px;
+		
+		font-size:14px;
+	}
+}
+
+.rounded-corners (@radius: 5px) {
+	-webkit-border-radius: @radius;
+  	-moz-border-radius: @radius;
+  	-ms-border-radius: @radius;
+  	-o-border-radius: @radius;
+  	border-radius: @radius;
+}
+
+.transition (@speed: 0.5s){
+	-webkit-transition: all @speed;
+    -moz-transition: all @speed;
+    -o-transition: all @speed;
+    -ms-transition: all @speed;
+    transition: all @speed;
+}
+
 
 
 

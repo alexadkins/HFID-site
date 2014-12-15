@@ -321,3 +321,44 @@ button:focus {
   font-weight: 300;
   border-top: 2px solid #449bb5;
 }
+.splashButton {
+  font-size: 12px;
+  text-decoration: none;
+  display: block;
+  width: 75%;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 4px;
+  background: #449bb5;
+  color: white;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  border-bottom: 3px solid #3d424f;
+  border-right: 3px solid #3d424f;
+}
+.splashButton:active {
+  border-bottom: 0px solid black;
+  border-right: 0px solid black;
+  -webkit-transition: all 0.1s;
+  -moz-transition: all 0.1s;
+  -o-transition: all 0.1s;
+  -ms-transition: all 0.1s;
+  transition: all 0.1s;
+}
+.splashButton h1 {
+  font-size: 20px;
+  width: 100%;
+  margin: 0 auto;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.splashButton p {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  margin: 5px 2px;
+  font-size: 14px;
+}
