@@ -63,7 +63,7 @@
 			})
 			.state("home.help",{
 				url:"/help",
-				templateUrl:"pages/home.help.html"
+				templateUrl:"pages/help.html"
 			});
 	});
 
